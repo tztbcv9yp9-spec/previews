@@ -4,254 +4,484 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>WOW Barbers | Barber shop on Brownhills High Street</title>
-<meta name="description" content="Haircuts, beard trims and hot towel shaves at 39 High Street, Brownhills. Walk-ins only, no appointment needed.">
+<title>WOW Barbers | Walk-in barbershop on Brownhills High Street</title>
+<meta name="description" content="WOW Barbers, 39 High Street, Brownhills. Fades, beard trims and hot towel shaves. Walk-ins only, open seven days a week.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#141110; --panel:#1e1a18; --line:#342d29;
-  --cream:#f5eee2; --dim:#b3a797;
-  --red:#d8432e; --red-dark:#bd3421; --gold:#e0ab4a; --blue:#2f5fa8;
+  --paper:#f6f1e8; --card:#fffdf9; --ink:#17120e; --muted:#6c6258; --line:#e3d9ca;
+  --dark:#15100d; --dark-2:#211a15; --cream:#f4ede2; --cream-dim:#bdb2a3;
+  --red:#b3271c; --red-deep:#931d14; --gold:#c9963e; --green:#2f8f5b;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--cream);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
 a{color:inherit}
-svg{display:block}
 p{margin:0}
-h1,h2,h3{margin:0;font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;font-weight:400;letter-spacing:.02em;line-height:.95;text-transform:uppercase}
-h2{font-size:clamp(2.4rem,5vw,3.6rem)}
-.wrap{width:min(1100px,100% - 40px);margin-inline:auto}
-section{padding:84px 0}
-.kicker{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
-.kicker::before{content:"";width:26px;height:2px;background:var(--gold)}
-.dim{color:var(--dim)}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.4vw,3.1rem)}
+h3{font-size:1.45rem}
+.wrap{width:min(1140px,100% - 40px);margin-inline:auto}
+section{padding:92px 0}
+.label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.muted{color:var(--muted)}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
 
-.preview{background:#000;color:#a99e90;font-size:.8rem;text-align:center;padding:8px 16px}
-.preview strong{color:#fff}
+/* preview strip */
+.preview{background:#000;color:#b7ab9c;font-size:.8rem;text-align:center;padding:8px 16px;line-height:1.45}
+.preview strong{color:#fff;font-weight:600}
 
-header{position:sticky;top:0;z-index:20;background:rgba(20,17,16,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;gap:28px;height:72px}
-.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none;font-family:"Bebas Neue",Impact,sans-serif;font-size:1.9rem;letter-spacing:.04em;line-height:1}
-.logo b{font-weight:400;color:var(--red)}
-.logo small{font-size:1.05rem;letter-spacing:.2em;color:var(--dim)}
-nav{display:flex;gap:26px;margin-left:auto}
-nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--dim)}
-nav a:hover{color:var(--cream)}
+/* top line */
+.topline{background:var(--dark);color:var(--cream);font-size:.9rem}
+.topline .wrap{display:flex;gap:26px;align-items:center;min-height:42px}
+.status{display:inline-flex;align-items:center;gap:9px;font-weight:600}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(47,143,91,.25)}
+.status.shut i{background:#8c8175;box-shadow:none}
+.topline .mid{color:var(--cream-dim)}
+.topline a{margin-left:auto;text-decoration:none;font-weight:600;white-space:nowrap}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 26px;border-radius:6px;font:inherit;font-weight:700;text-decoration:none;white-space:nowrap;border:2px solid transparent;transition:transform .15s,background .15s,border-color .15s}
-.btn:hover{transform:translateY(-1px)}
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(246,241,232,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:30px;height:74px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.pole{width:10px;height:38px;border-radius:5px;border:1.5px solid var(--ink);background:repeating-linear-gradient(-45deg,var(--red) 0 5px,#fff 5px 10px,#27477d 10px 15px,#fff 15px 20px)}
+.logo b{font-family:var(--serif);font-weight:700;font-size:1.85rem;letter-spacing:.01em;line-height:1}
+.logo span{display:block;font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+nav{display:flex;gap:28px;margin-left:auto}
+nav a{text-decoration:none;font-weight:500;font-size:.98rem}
+nav a:hover{color:var(--red)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font:inherit;font-weight:600;text-decoration:none;white-space:nowrap;border:1.5px solid transparent;transition:background .15s,border-color .15s,color .15s}
+.btn svg{flex:none}
 .btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red-dark)}
-.btn-line{border-color:#5a4f48;color:var(--cream)}
-.btn-line:hover{border-color:var(--cream)}
-.bar .btn{padding:11px 18px;font-size:.92rem}
+.btn-red:hover{background:var(--red-deep)}
+.btn-ghost{border-color:rgba(244,237,226,.55);color:var(--cream)}
+.btn-ghost:hover{border-color:var(--cream);background:rgba(244,237,226,.08)}
+.btn-ink{border-color:var(--ink);color:var(--ink)}
+.btn-ink:hover{background:var(--ink);color:var(--paper)}
+.bar .btn{padding:11px 20px;font-size:.95rem}
 
-.hero{padding:76px 0 84px;background:radial-gradient(900px 480px at 12% -10%,#3a1711 0,transparent 62%)}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
-h1{font-size:clamp(3.6rem,10vw,8rem)}
-h1 span{color:var(--red)}
-.hero p.lede{font-size:1.18rem;color:var(--dim);max-width:46ch;margin-top:20px}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+/* hero */
+.hero{position:relative;padding:0;background:var(--dark);color:var(--cream);overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:68% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,16,13,.94) 0,rgba(21,16,13,.82) 34%,rgba(21,16,13,.25) 68%,rgba(21,16,13,.1) 100%)}
+.hero .wrap{position:relative;z-index:2;padding:108px 0 190px}
+.hero .label{color:var(--gold)}
+h1{font-size:clamp(3.4rem,9vw,6.6rem);font-weight:700;letter-spacing:-.02em}
+.tagline{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.35rem,2.6vw,1.9rem);color:var(--cream);margin-top:10px}
+.hero .lede{max-width:44ch;margin-top:22px;font-size:1.12rem;color:#ddd3c5}
+.rating{display:inline-flex;align-items:center;gap:12px;margin-top:26px;font-weight:600}
+.stars{display:inline-flex;gap:2px;color:var(--gold)}
+.rating small{font-weight:400;color:var(--cream-dim);font-size:.95rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 
-.sign{display:grid;grid-template-columns:46px 1fr;gap:22px;align-items:stretch}
-.pole{border-radius:23px;border:3px solid #d9d2c6;background:repeating-linear-gradient(-45deg,var(--red) 0 16px,#f5eee2 16px 32px,var(--blue) 32px 48px,#f5eee2 48px 64px);background-size:200% 200%;animation:spin 6s linear infinite;box-shadow:inset 0 0 0 2px rgba(0,0,0,.15)}
-@keyframes spin{to{background-position:0 -181px}}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
-.card h3{font-size:2.1rem}
-.open{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:.9rem;margin-bottom:14px}
-.open i{width:10px;height:10px;border-radius:50%;background:#4cc38a;box-shadow:0 0 0 5px rgba(76,195,138,.2)}
-.open.shut i{background:#8a7f73;box-shadow:none}
-.card dl{margin:18px 0 0;display:grid;gap:12px}
-.card dt{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:700}
-.card dd{margin:2px 0 0;font-weight:500}
+/* info band */
+.info{padding:0;margin-top:-118px;position:relative;z-index:5}
+.info-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px -30px rgba(23,18,14,.45);overflow:hidden}
+.info-grid>div{padding:34px 34px 36px}
+.info-grid>div+div{border-left:1px solid var(--line)}
+.info h3{font-size:1.3rem;margin-bottom:14px}
+table.hours{width:100%;border-collapse:collapse;font-size:.98rem}
+table.hours td{padding:6px 0}
+table.hours td:last-child{text-align:right;color:var(--muted)}
+table.hours tr.today td{font-weight:700;color:var(--ink)}
+table.hours tr.today td:first-child::after{content:"Today";margin-left:9px;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;padding:3px 7px;border-radius:999px;font-weight:700;vertical-align:2px}
+.info address{font-style:normal;font-size:1.06rem;line-height:1.5}
+.textlink{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-weight:600;color:var(--red);text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:1px}
+.info p+p{margin-top:12px}
 
-.strip{border-block:1px solid var(--line);background:var(--panel);padding:0}
-.strip ul{display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:0;list-style:none}
-.strip li{padding:26px 24px;display:flex;gap:14px;align-items:center;font-weight:700}
-.strip li+li{border-left:1px solid var(--line)}
-.strip svg{color:var(--gold);flex:none}
-.strip small{display:block;font-weight:400;color:var(--dim)}
+/* reviews */
+.reviews-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.score{font-family:var(--serif);font-weight:700;font-size:clamp(5rem,12vw,8.5rem);line-height:.9;letter-spacing:-.03em}
+.score-meta{margin-top:14px;font-size:1.05rem}
+.score-meta .stars{margin-right:8px;vertical-align:-3px}
+blockquote{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(1.6rem,3.3vw,2.5rem);line-height:1.2;letter-spacing:-.01em}
+blockquote::before{content:"\201C";display:block;font-size:4.5rem;line-height:.6;color:var(--red);margin-bottom:10px}
+figcaption{margin-top:16px;color:var(--muted);font-size:.95rem}
+.themes{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+.themes li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-size:.95rem;font-weight:500}
 
-.menu-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
-.menu{margin:0;padding:0;list-style:none}
-.menu li{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:14px;padding:22px 0;border-bottom:1px solid var(--line)}
-.menu li:first-child{padding-top:0}
-.menu .name{font-family:"Bebas Neue",Impact,sans-serif;font-size:1.9rem;letter-spacing:.03em;line-height:1}
-.menu .dots{border-bottom:2px dotted #4a413b;transform:translateY(-6px)}
-.menu .price{font-family:"Bebas Neue",Impact,sans-serif;font-size:1.9rem;color:var(--gold);line-height:1}
-.menu .what{grid-column:1/-1;color:var(--dim);font-size:.95rem;margin-top:-6px}
+/* services */
+.services{background:var(--card);border-block:1px solid var(--line)}
+.head-row{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sample{font-size:.82rem;color:var(--muted);border:1px dashed #c9bca9;border-radius:999px;padding:6px 14px;white-space:nowrap}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.svc img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.svc .body{padding:24px 24px 26px}
+.svc p{color:var(--muted);font-size:.97rem;margin-top:8px}
+.plist{list-style:none;margin:18px 0 0;padding:0}
+.plist li{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-top:1px solid var(--line);font-weight:500}
+.plist li span:first-child{flex:1}
+.plist li span:last-child{font-family:var(--serif);font-weight:600;font-size:1.15rem}
 
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
-.tile{aspect-ratio:1;border-radius:12px;border:1px dashed #4a413b;background:repeating-linear-gradient(135deg,#1e1a18 0 14px,#231e1b 14px 28px);display:grid;place-items:center;text-align:center;padding:16px;color:var(--dim);font-size:.88rem}
-.tile.wide{grid-column:span 2;aspect-ratio:auto}
+/* shop */
+.shop{background:var(--dark);color:var(--cream)}
+.shop .label{color:var(--gold)}
+.shop-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.shop-grid img{border-radius:16px;width:100%;aspect-ratio:3/2;object-fit:cover}
+.shop p{color:#d5cabb;margin-top:18px;max-width:50ch}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:64px;padding-top:44px;border-top:1px solid #37302a}
+.team-head{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+.team-head h3{font-size:1.7rem}
+.team-head .sample{color:var(--cream-dim);border-color:#5a5047}
+.member{display:flex;align-items:center;gap:16px;background:var(--dark-2);border:1px solid #37302a;border-radius:14px;padding:16px}
+.member img{width:68px;height:68px;border-radius:50%;object-fit:cover;flex:none}
+.member b{display:block;font-family:var(--serif);font-weight:600;font-size:1.15rem}
+.member span{font-size:.92rem;color:var(--cream-dim)}
 
-.visit{background:var(--panel);border-top:1px solid var(--line)}
-.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.addr{font-size:1.25rem;font-weight:500;margin-top:18px;line-height:1.5}
-table{width:100%;border-collapse:collapse;font-size:1rem}
-td{padding:13px 0;border-bottom:1px solid var(--line)}
-td:last-child{text-align:right;color:var(--dim)}
-tr.today td{color:var(--cream);font-weight:700}
-tr.today td:first-child::after{content:"Today";margin-left:10px;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:#fff;padding:3px 8px;border-radius:4px;font-weight:700}
+/* work */
+.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.work-grid img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.work-note{margin-top:16px;font-size:.9rem;color:var(--muted)}
 
-footer{padding:40px 0 110px;color:var(--dim);font-size:.88rem;border-top:1px solid var(--line)}
+/* visit */
+.visit{background:var(--card);border-top:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:stretch}
+.visit address{font-style:normal;font-size:1.3rem;font-family:var(--serif);font-weight:500;line-height:1.4;margin-top:18px}
+.map{border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:380px;background:#e9e2d5}
+.map iframe{display:block;width:100%;height:100%;min-height:380px;border:0}
+.visit .cta{margin-top:26px}
+.visit p.muted{margin-top:16px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+details{border-top:1px solid var(--line);padding:20px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:var(--serif);font-weight:600;font-size:1.25rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-weight:400;font-size:1.5rem;line-height:1;color:var(--red)}
+details[open] summary::after{content:"\2212"}
+details p{margin-top:12px;color:var(--muted);max-width:60ch}
+
+footer{background:var(--dark);color:var(--cream-dim);padding:56px 0;font-size:.92rem}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot b{display:block;color:var(--cream);font-family:var(--serif);font-weight:600;font-size:1.15rem;margin-bottom:10px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--cream)}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid #37302a;font-size:.84rem}
+
 .callbar{display:none}
 
-@media (max-width:900px){
-  section{padding:60px 0}
-  .hero{padding:44px 0 56px}
-  .hero-grid,.menu-grid,.visit-grid{grid-template-columns:1fr;gap:38px}
+@media (max-width:920px){
+  body{font-size:16px}
+  section{padding:64px 0}
   header nav{display:none}
+  .bar{height:66px}
   .bar .btn{margin-left:auto}
-  .strip ul{grid-template-columns:1fr}
-  .strip li+li{border-left:0;border-top:1px solid var(--line)}
-  .gallery{grid-template-columns:1fr 1fr}
-  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(20,17,16,.96);border-top:1px solid var(--line)}
+  .topline .mid{display:none}
+  .hero img.bg{object-position:72% 20%}
+  .hero::after{background:linear-gradient(180deg,rgba(21,16,13,.18) 0,rgba(21,16,13,.62) 38%,rgba(21,16,13,.95) 100%)}
+  .hero .wrap{padding:230px 0 150px}
+  .hero .cta .btn{flex:1 1 100%}
+  .info{margin-top:-104px}
+  .info-grid{grid-template-columns:1fr}
+  .info-grid>div{padding:26px 24px}
+  .info-grid>div+div{border-left:0;border-top:1px solid var(--line)}
+  .reviews-grid,.shop-grid,.visit-grid,.faq-grid{grid-template-columns:1fr;gap:36px}
+  .svc-grid{grid-template-columns:1fr}
+  .team{grid-template-columns:1fr;margin-top:44px;padding-top:34px}
+  .work-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .foot{grid-template-columns:1fr;gap:28px}
+  footer{padding-bottom:120px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(21,16,13,.97);border-top:1px solid #37302a}
   .callbar .btn{flex:1;padding:14px 10px}
 }
-@media (prefers-reduced-motion:reduce){.pole{animation:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
-<div class="preview"><strong>Concept preview for WOW Barbers, Brownhills.</strong> Prices and closing times are samples. This is not a live website.</div>
+<div class="preview"><strong>Concept preview for WOW Barbers, Brownhills.</strong> Photos, prices and barbers' names are stand-ins until yours go in. This is not a live website.</div>
+
+<div class="topline">
+  <div class="wrap">
+    <span class="status" id="status"><i></i><span>Open seven days</span></span>
+    <span class="mid">Walk-ins only. No appointments.</span>
+    <a href="tel:+447477603121">07477 603121</a>
+  </div>
+</div>
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="WOW Barbers home"><b>WOW</b><small>BARBERS</small></a>
+    <a class="logo" href="#top" aria-label="WOW Barbers home">
+      <i class="pole" aria-hidden="true"></i>
+      <div><b>WOW</b><span>Barbers</span></div>
+    </a>
     <nav aria-label="Main">
       <a href="#prices">Prices</a>
-      <a href="#work">Our work</a>
+      <a href="#shop">The shop</a>
+      <a href="#reviews">Reviews</a>
       <a href="#visit">Find us</a>
     </nav>
-    <a class="btn btn-red" href="#visit">Call the shop</a>
+    <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Get directions</a>
   </div>
 </header>
 
 <main id="top">
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="kicker">39 High Street · Brownhills</span>
-        <h1>Sharp cuts.<br><span>No fuss.</span></h1>
-        <p class="lede">Haircuts, beard trims and hot towel shaves on Brownhills High Street, open seven days a week. Walk-ins only: no appointment needed, just turn up when it suits you.</p>
-        <div class="cta">
-          <a class="btn btn-red" href="#visit">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.100 1 .400 1.900.700 2.800a2 2 0 0 1-.500 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg>
-            Call 07477 603121
-          </a>
-          <a class="btn btn-line" href="#prices">See prices</a>
+    <img class="bg" src="img/wow/hero.jpg" alt="A barber fading a customer's hair in the chair">
+    <div class="wrap">
+      <span class="label">Barbershop · 39 High Street, Brownhills</span>
+      <h1>WOW Barbers</h1>
+      <p class="tagline">Where every cut is a wow.</p>
+      <p class="lede">Fades, beard trims and hot towel shaves on Brownhills High Street. Walk-ins only, seven days a week.</p>
+      <div class="rating" aria-label="Rated 4.9 out of 5 from 284 Google reviews">
+        <span class="stars" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg>
+        </span>
+        <span>4.9 <small>from 284 Google reviews</small></span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-ghost" href="tel:+447477603121">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.100 1 .400 1.900.700 2.800a2 2 0 0 1-.500 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg>
+          Call 07477 603121
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info" aria-label="Opening hours and address">
+    <div class="wrap">
+      <div class="info-grid">
+        <div>
+          <h3>Opening hours</h3>
+          <table class="hours" id="hours">
+            <tbody>
+              <tr data-day="1"><td>Monday</td><td>9am to 6pm</td></tr>
+              <tr data-day="2"><td>Tuesday</td><td>9am to 6pm</td></tr>
+              <tr data-day="3"><td>Wednesday</td><td>9am to 6pm</td></tr>
+              <tr data-day="4"><td>Thursday</td><td>9am to 6pm</td></tr>
+              <tr data-day="5"><td>Friday</td><td>9am to 7pm</td></tr>
+              <tr data-day="6"><td>Saturday</td><td>8.30am to 7pm</td></tr>
+              <tr data-day="0"><td>Sunday</td><td>10am to 5pm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Where we are</h3>
+          <address>39 High Street<br>Brownhills, Walsall<br>WS8 6ED</address>
+          <a class="textlink" href="https://www.google.com/maps/dir/?api=1&destination=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div>
+          <h3>Walk-ins only</h3>
+          <p>We don't take bookings. Come in, take a seat, and you're next when a chair comes free.</p>
+          <p class="muted">Want to check how busy we are? Call <a href="tel:+447477603121">07477 603121</a>.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="sign">
-        <div class="pole" aria-hidden="true"></div>
-        <div class="card">
-          <div class="open" id="openNow"><i></i><span>Open today</span></div>
-          <h3>Walk-ins welcome</h3>
-          <dl>
-            <div><dt>Today</dt><dd id="todayHours">9am to 7pm</dd></div>
-            <div><dt>Where</dt><dd>39 High Street, Brownhills WS8 6ED</dd></div>
-            <div><dt>Phone</dt><dd>07477 603121</dd></div>
-            <div><dt>Rated</dt><dd>4.9 out of 5 from 284 Google reviews</dd></div>
-          </dl>
+  <section id="reviews">
+    <div class="wrap reviews-grid">
+      <div>
+        <span class="label">Google reviews</span>
+        <div class="score">4.9</div>
+        <p class="score-meta">
+          <span class="stars" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg>
+          </span>
+          out of 5, from <strong>284 reviews</strong>
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&query=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Read them on Google</a>
+      </div>
+      <figure style="margin:0">
+        <blockquote>Fantastic barbers, friendly staff, great hair cuts at a good rate.</blockquote>
+        <figcaption>From a Google review of WOW Barbers</figcaption>
+        <ul class="themes" aria-label="What customers mention">
+          <li>Friendly staff</li>
+          <li>Hot towel razor shaves</li>
+          <li>Fair prices</li>
+          <li>Free parking nearby</li>
+        </ul>
+      </figure>
+    </div>
+  </section>
+
+  <section class="services" id="prices">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <span class="label">Services and prices</span>
+          <h2>What we do</h2>
+        </div>
+        <span class="sample">Sample prices. Yours go here.</span>
+      </div>
+      <div class="svc-grid">
+        <article class="svc">
+          <img src="img/wow/fade.jpg" alt="Back of a head with a fresh skin fade" loading="lazy">
+          <div class="body">
+            <h3>Cuts and fades</h3>
+            <p>Skin fades, tapers, mullets, or a straightforward short back and sides.</p>
+            <ul class="plist">
+              <li><span>Men's haircut</span><span>£15</span></li>
+              <li><span>Skin fade</span><span>£17</span></li>
+              <li><span>Head shave</span><span>£10</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc">
+          <img src="img/wow/beard.jpg" alt="A barber shaping a beard with a trimmer" loading="lazy">
+          <div class="body">
+            <h3>Beards</h3>
+            <p>Shaped, lined up and tidied, on its own or with your cut.</p>
+            <ul class="plist">
+              <li><span>Beard trim</span><span>£8</span></li>
+              <li><span>Haircut and beard</span><span>£21</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc">
+          <img src="img/wow/towel.jpg" alt="A customer with a hot towel over his face" loading="lazy">
+          <div class="body">
+            <h3>Hot towel</h3>
+            <p>A close razor shave with hot towels, or a hot towel facial mask.</p>
+            <ul class="plist">
+              <li><span>Hot towel shave</span><span>£14</span></li>
+              <li><span>Hot towel facial mask</span><span>£10</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="wrap">
+      <div class="shop-grid">
+        <img src="img/wow/shop.jpg" alt="Barber chairs and mirrors inside the shop" loading="lazy">
+        <div>
+          <span class="label">The shop</span>
+          <h2>Number 39, Brownhills High Street</h2>
+          <p>There is no booking system and no app. You walk in, take a seat, and you're next when a chair comes free. We're open seven days a week, with a late finish on Fridays and Saturdays.</p>
+          <p>Fresh cuts, fades, beard trims, hot towel shaves and facial masks, all under one roof.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="strip" aria-label="Good to know">
-    <div class="wrap">
-      <ul>
-        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div>No appointment needed<small>Turn up and take a seat</small></div></li>
-        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.500 7.500 20 18M8.500 16.500 20 6"/></svg><div>Cuts, fades and shaves<small>Tell us how you like it and that is what you get</small></div></li>
-        <li><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11a7 7 0 0 0-14 0c0 4.800 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg><div>Right on the High Street<small>Number 39, in the middle of Brownhills</small></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="prices">
-    <div class="wrap menu-grid">
-      <div>
-        <span class="kicker">Prices</span>
-        <h2>What it costs</h2>
-        <p class="dim" style="margin-top:16px;max-width:34ch">Simple prices, no extras added at the till. Ask in the chair if you want something that is not on the list.</p>
+      <div class="team">
+        <div class="team-head">
+          <h3>The barbers</h3>
+          <span class="sample">Stand-ins. Your names and photos go here.</span>
+        </div>
+        <div class="member"><img src="img/wow/hero.jpg" alt="" loading="lazy" style="object-position:48% 20%"><div><b>First name</b><span>Skin fades and tapers</span></div></div>
+        <div class="member"><img src="img/wow/beard.jpg" alt="" loading="lazy" style="object-position:30% 40%"><div><b>First name</b><span>Beards and line-ups</span></div></div>
+        <div class="member"><img src="img/wow/tools.jpg" alt="" loading="lazy"><div><b>First name</b><span>Hot towel shaves</span></div></div>
       </div>
-      <ul class="menu">
-        <li><span class="name">Men's haircut</span><span class="dots"></span><span class="price">£15</span><span class="what">Scissor or clipper cut, finished and styled.</span></li>
-        <li><span class="name">Beard trim</span><span class="dots"></span><span class="price">£8</span><span class="what">Shaped, lined up and tidied.</span></li>
-        <li><span class="name">Hot towel shave</span><span class="dots"></span><span class="price">£14</span><span class="what">Hot towel, lather and a close straight-razor shave.</span></li>
-        <li><span class="name">Head shave</span><span class="dots"></span><span class="price">£10</span><span class="what">Clean all over, smooth finish.</span></li>
-      </ul>
     </div>
   </section>
 
-  <section id="work" style="padding-top:0">
+  <section id="work">
     <div class="wrap">
-      <span class="kicker">Our work</span>
-      <h2>Fresh out of the chair</h2>
-      <div class="gallery">
-        <div class="tile wide">Your best cuts go here. The site pulls them straight from your Instagram, so posting there updates this too.</div>
-        <div class="tile">Photo</div>
-        <div class="tile">Photo</div>
-        <div class="tile">Photo</div>
-        <div class="tile">Photo</div>
-        <div class="tile wide">A shot of the shop front helps new customers spot you from the street.</div>
+      <div class="head-row">
+        <div>
+          <span class="label">Recent cuts</span>
+          <h2>Fresh out of the chair</h2>
+        </div>
+        <a class="btn btn-ink" href="https://www.instagram.com/wow__barbers/" target="_blank" rel="noopener">@wow__barbers on Instagram</a>
       </div>
+      <div class="work-grid">
+        <img src="img/wow/mullet.jpg" alt="A mullet with a taper fade, shown in a hand mirror" loading="lazy">
+        <img src="img/wow/fade.jpg" alt="A mid skin fade from behind" loading="lazy">
+        <img src="img/wow/beard.jpg" alt="A beard being lined up" loading="lazy">
+        <img src="img/wow/tools.jpg" alt="Clippers, combs and a razor on the worktop" loading="lazy">
+      </div>
+      <p class="work-note">Stand-in photos. On the live site this grid can show your latest Instagram posts, so posting there keeps the website fresh.</p>
     </div>
   </section>
 
   <section class="visit" id="visit">
     <div class="wrap visit-grid">
       <div>
-        <span class="kicker">Find us</span>
-        <h2>Come and see us</h2>
-        <p class="addr">WOW Barbers<br>39 High Street<br>Brownhills, Walsall WS8 6ED</p>
+        <span class="label">Find us</span>
+        <h2>On the High Street</h2>
+        <address>WOW Barbers<br>39 High Street<br>Brownhills, Walsall WS8 6ED</address>
+        <p class="muted">Customers mention free parking close by.</p>
         <div class="cta">
-          <a class="btn btn-red" href="#visit">Call 07477 603121</a>
-          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-ink" href="tel:+447477603121">Call 07477 603121</a>
         </div>
       </div>
+      <div class="map">
+        <iframe title="Map showing WOW Barbers at 39 High Street, Brownhills" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=WOW+Barbers,+39+High+St,+Brownhills,+Walsall+WS8+6ED&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="questions">
+    <div class="wrap faq-grid">
       <div>
-        <span class="kicker">Opening hours</span>
-        <table id="hours">
-          <tbody>
-            <tr data-day="1"><td>Monday</td><td>9am to 7pm</td></tr>
-            <tr data-day="2"><td>Tuesday</td><td>9am to 7pm</td></tr>
-            <tr data-day="3"><td>Wednesday</td><td>9am to 7pm</td></tr>
-            <tr data-day="4"><td>Thursday</td><td>9am to 7pm</td></tr>
-            <tr data-day="5"><td>Friday</td><td>9am to 7pm</td></tr>
-            <tr data-day="6"><td>Saturday</td><td>9am to 6pm</td></tr>
-            <tr data-day="0"><td>Sunday</td><td>10am to 4pm</td></tr>
-          </tbody>
-        </table>
+        <span class="label">Questions</span>
+        <h2>Before you come in</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Do I need to book?</summary>
+          <p>No. We're walk-ins only, so there is nothing to book. Turn up any day of the week and take a seat.</p>
+        </details>
+        <details>
+          <summary>When are you open?</summary>
+          <p>Monday to Thursday 9am to 6pm, Friday 9am to 7pm, Saturday 8.30am to 7pm and Sunday 10am to 5pm.</p>
+        </details>
+        <details>
+          <summary>Do you do hot towel shaves?</summary>
+          <p>Yes. We do hot towel razor shaves and hot towel facial masks, as well as cuts, fades and beard trims.</p>
+        </details>
+        <details>
+          <summary>Where can I park?</summary>
+          <p>Customers tell us there is free parking close to the shop. We're at number 39 on the High Street.</p>
+        </details>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap">WOW Barbers Brownhills Ltd is registered in England and Wales, company number 17425160. Registered office: 39 High Street, Brownhills, Walsall WS8 6ED.</div>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <b>WOW Barbers</b>
+        39 High Street, Brownhills, Walsall WS8 6ED<br>
+        <a href="tel:+447477603121">07477 603121</a>
+      </div>
+      <div>
+        <b>Open seven days</b>
+        Mon to Thu 9am to 6pm<br>Fri 9am to 7pm · Sat 8.30am to 7pm<br>Sun 10am to 5pm
+      </div>
+      <div>
+        <b>Follow</b>
+        <a href="https://www.instagram.com/wow__barbers/" target="_blank" rel="noopener">Instagram @wow__barbers</a>
+      </div>
+    </div>
+    <p class="legal">WOW Barbers Brownhills Ltd is registered in England and Wales, company number 17425160. Registered office: 39 High Street, Brownhills, Walsall WS8 6ED.</p>
+  </div>
 </footer>
 
 <div class="callbar">
-  <a class="btn btn-red" href="#visit">Call the shop</a>
-  <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Directions</a>
+  <a class="btn btn-red" href="tel:+447477603121">Call the shop</a>
+  <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=WOW+Barbers+39+High+Street+Brownhills+WS8+6ED" target="_blank" rel="noopener">Directions</a>
 </div>
 
 <script>
 (function(){
-  var close={0:16,1:19,2:19,3:19,4:19,5:19,6:18},open={0:10,1:9,2:9,3:9,4:9,5:9,6:9};
+  var open={0:10,1:9,2:9,3:9,4:9,5:9,6:8.5},close={0:17,1:18,2:18,3:18,4:18,5:19,6:19};
+  var names=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function clock(h){var m=Math.round((h%1)*60),hr=Math.floor(h),s=hr>12?hr-12:hr;return s+(m?'.'+(m<10?'0':'')+m:'')+(hr>=12?'pm':'am');}
   var now=new Date(),d=now.getDay(),h=now.getHours()+now.getMinutes()/60;
   var row=document.querySelector('#hours tr[data-day="'+d+'"]');
-  if(row){row.classList.add('today');document.getElementById('todayHours').textContent=row.cells[1].textContent;}
-  var badge=document.getElementById('openNow'),isOpen=h>=open[d]&&h<close[d];
-  badge.querySelector('span').textContent=isOpen?'Open now':'Closed right now';
-  badge.classList.toggle('shut',!isOpen);
+  if(row){row.classList.add('today');}
+  var el=document.getElementById('status'),txt;
+  if(h>=open[d]&&h<close[d]){txt='Open now · until '+clock(close[d]);}
+  else{
+    var next=h<open[d]?d:(d+1)%7;
+    txt='Closed · opens '+clock(open[next])+(next===d?' today':' '+names[next]);
+    el.classList.add('shut');
+  }
+  el.querySelector('span').textContent=txt;
 })();
 </script>
 </body>
