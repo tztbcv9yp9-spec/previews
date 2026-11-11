@@ -4,310 +4,499 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Stansted Aircon | Air conditioning in Stansted, Bishop's Stortford and Saffron Walden</title>
-<meta name="description" content="Air conditioning installed, serviced and repaired around Stansted, Bishop's Stortford and Saffron Walden. Free survey and a fixed written quote.">
+<title>Stansted Aircon | Home air conditioning installation around Stansted</title>
+<meta name="description" content="Air conditioning installed, serviced and repaired around Stansted. A wall unit that cools in summer and heats in winter. Free survey and a fixed written quote.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0c2233; --body:#2b4352; --muted:#5d7380;
-  --brand:#0e7c86; --brand-dark:#0a5f67; --tint:#e9f5f4;
-  --warm:#f4a340; --warm-dark:#e18f27; --warm-ink:#231603;
-  --sand:#f7f1e6; --line:#dfe9eb; --paper:#fff;
-  --radius:22px;
+  --navy:#11203b; --navy-deep:#0a1528; --sun:#ffc42e; --sun-deep:#eeb012;
+  --mist:#eef2f6; --paper:#ffffff; --ink:#131c2b; --muted:#566173; --line:#d6dce6; --dash:#97a2b5;
+  --display:"Archivo","Arial Black",Arial,sans-serif;
+  --text:"Source Sans 3","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--body);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
-svg{display:block}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{color:var(--ink);margin:0;letter-spacing:-.02em;line-height:1.12}
-h2{font-size:clamp(1.75rem,3vw,2.4rem);font-weight:800}
-h3{font-size:1.12rem;font-weight:700}
 p{margin:0}
-.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
-section{padding:88px 0}
-.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-dark);margin-bottom:14px}
-.lede{font-size:1.1rem;color:var(--muted);max-width:56ch;margin-top:14px}
-:focus-visible{outline:3px solid var(--warm);outline-offset:3px;border-radius:6px}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:800;font-stretch:112%;line-height:1.05;letter-spacing:-.02em;color:var(--navy)}
+h2{font-size:clamp(1.8rem,3.3vw,2.5rem)}
+h3{font-size:1.12rem;font-weight:700;letter-spacing:-.005em;line-height:1.2}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+section{padding:80px 0}
+.muted{color:var(--muted)}
+:focus-visible{outline:3px solid #2c6be0;outline-offset:3px;border-radius:4px}
 
-.preview{background:var(--ink);color:#c5dadd;font-size:.8rem;text-align:center;padding:8px 16px}
-.preview strong{color:#fff}
+/* stand-in markers */
+.standin{display:inline-block;font-size:.82rem;line-height:1.35;color:var(--muted);border:1px dashed var(--dash);border-radius:6px;padding:4px 10px;background:transparent}
+.blank{color:var(--muted);font-style:italic;border-bottom:1.5px dashed var(--dash)}
 
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;gap:28px;height:72px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:1.18rem;color:var(--ink);letter-spacing:-.02em}
-.logo span{color:var(--brand)}
-nav{display:flex;gap:26px;margin-left:auto}
-nav a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--body)}
-nav a:hover{color:var(--brand-dark)}
+.preview{background:var(--navy-deep);color:#b4c0d4;font-size:.82rem;text-align:center;padding:8px 16px;line-height:1.45}
+.preview strong{color:#fff;font-weight:600}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 24px;border-radius:999px;font:inherit;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
-.btn{white-space:nowrap}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--warm);color:var(--warm-ink)}
-.btn-primary:hover{background:var(--warm-dark)}
-.btn-ghost{border-color:#b9d0d4;color:var(--ink);background:transparent}
-.btn-ghost:hover{border-color:var(--brand)}
-.btn-dark{background:var(--ink);color:#fff;padding:11px 20px;font-size:.95rem}
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:26px;height:76px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo b{font-family:var(--display);font-weight:800;font-stretch:118%;font-size:1.22rem;line-height:1;letter-spacing:-.01em;color:var(--navy);white-space:nowrap}
+nav{display:flex;gap:24px;margin-left:auto}
+nav a{text-decoration:none;font-weight:600;font-size:1rem}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--sun-deep);text-decoration-thickness:3px;text-underline-offset:6px}
+.tel{line-height:1.15;text-align:right}
+.tel a{font-family:var(--display);font-weight:800;font-size:1.08rem;text-decoration:none;white-space:nowrap;color:var(--navy)}
+.tel small{display:inline-block;font-size:.76rem;color:var(--muted);border-bottom:1px dashed var(--dash);margin-top:3px}
+.tel-icon{display:none}
 
-.hero{padding:72px 0 80px;background:linear-gradient(180deg,var(--tint),#fff 82%)}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-h1{font-size:clamp(2.3rem,4.7vw,3.75rem);font-weight:800;letter-spacing:-.03em;line-height:1.05}
-h1 em{font-style:normal;color:var(--brand)}
-.hero .lede{font-size:1.18rem}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.ticks{display:flex;flex-wrap:wrap;gap:10px 22px;margin:30px 0 0;padding:0;list-style:none;font-weight:600;font-size:.95rem;color:var(--ink)}
-.ticks li{display:flex;align-items:center;gap:8px}
-.ticks svg{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:54px;padding:0 24px;border-radius:8px;font:inherit;font-weight:700;text-decoration:none;white-space:nowrap;border:2px solid transparent;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.btn-main{background:var(--sun);color:var(--navy)}
+.btn-main:hover{background:var(--sun-deep)}
+.btn-line{border-color:var(--navy);color:var(--navy);background:#fff}
+.btn-line:hover{background:var(--navy);color:#fff}
+.btn-sm{min-height:44px;padding:0 18px;font-size:1rem}
 
-.room{--flow:var(--brand);position:relative;border-radius:30px;padding:30px 30px 150px;background:linear-gradient(160deg,#d9efee,#f6fbfb);box-shadow:0 34px 70px -34px rgba(12,34,51,.45);overflow:hidden;transition:background .4s}
-.room[data-mode="heat"]{--flow:#e8862a;background:linear-gradient(160deg,#fde9cf,#fffaf2)}
-.unit{width:100%;height:auto}
-.flow path{fill:none;stroke:var(--flow);stroke-width:5;stroke-linecap:round;stroke-dasharray:14 16;animation:drift 1.6s linear infinite;transition:stroke .4s}
-.flow path:nth-child(2){animation-duration:1.9s;opacity:.7}
-.flow path:nth-child(3){animation-duration:2.2s;opacity:.5}
-@keyframes drift{to{stroke-dashoffset:-60}}
-.status{position:absolute;left:30px;bottom:34px;font-weight:700;color:var(--ink);font-size:.95rem;display:flex;align-items:center;gap:9px}
-.status i{width:10px;height:10px;border-radius:50%;background:var(--flow);box-shadow:0 0 0 5px color-mix(in srgb,var(--flow) 22%,transparent)}
-.stat{position:absolute;right:24px;bottom:24px;width:214px;background:#fff;border-radius:22px;padding:18px;box-shadow:0 18px 40px -18px rgba(12,34,51,.4)}
-.stat small{display:block;font-weight:600;color:var(--muted);font-size:.78rem}
-.temp{display:flex;align-items:center;justify-content:space-between;margin:4px 0 12px}
-.temp b{font-size:2.5rem;font-weight:800;color:var(--ink);letter-spacing:-.04em;line-height:1}
-.temp button{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line);background:#fff;font:inherit;font-weight:700;font-size:1.1rem;color:var(--ink);cursor:pointer}
-.temp button:hover{border-color:var(--brand)}
-.modes{display:grid;grid-template-columns:1fr 1fr;background:#eef4f5;border-radius:999px;padding:4px}
-.modes button{border:0;background:transparent;border-radius:999px;padding:8px 0;font:inherit;font-weight:700;font-size:.85rem;color:var(--muted);cursor:pointer}
-.modes button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 2px 6px rgba(12,34,51,.14)}
+/* hero: headline first, wide photo underneath */
+.hero{padding:60px 0 56px}
+.hero-top{display:grid;grid-template-columns:1.3fr .9fr;gap:56px;align-items:end;margin-bottom:42px}
+h1{font-size:clamp(2.3rem,4.6vw,4rem);font-weight:900;letter-spacing:-.03em;line-height:1}
+.lede{font-size:1.2rem;line-height:1.5}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.hero-side .standin{margin-top:14px}
+.hero-photo{position:relative;margin:0;aspect-ratio:2/1;border-radius:10px;overflow:hidden;background:var(--mist)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero-photo figcaption{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.94);color:var(--ink)}
+.proof{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.proof li{border-left:4px solid var(--sun);padding:1px 0 3px 15px;font-size:1rem;line-height:1.35;color:var(--muted)}
+.proof b{display:block;font-family:var(--display);font-weight:800;font-stretch:108%;font-size:1.06rem;color:var(--navy);margin-bottom:3px}
 
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;background:#fff;transition:border-color .2s,transform .2s,box-shadow .2s}
-.card:hover{border-color:#a9cdd1;transform:translateY(-3px);box-shadow:0 18px 36px -24px rgba(12,34,51,.4)}
-.icon{width:50px;height:50px;border-radius:14px;background:var(--tint);color:var(--brand-dark);display:grid;place-items:center;margin-bottom:18px}
-.card p{margin-top:8px;font-size:.96rem;color:var(--muted)}
+/* prices */
+.prices{background:var(--mist)}
+.head-row{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.sub{margin-top:14px;max-width:60ch}
+.price-cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:34px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.price-cols>div{padding:28px 28px 30px}
+.price-cols>div+div{border-left:1px solid var(--line)}
+.price-cols h3{font-size:1.05rem;color:var(--muted);font-weight:700}
+.fig{font-family:var(--display);font-weight:900;font-stretch:112%;font-size:2.6rem;line-height:1;letter-spacing:-.03em;color:var(--navy);margin-top:14px}
+.fig span{font-family:var(--text);font-weight:500;font-size:1rem;letter-spacing:0;color:var(--muted);margin-right:6px}
+.fig.alt{font-size:1.5rem;line-height:1.15;letter-spacing:-.02em;padding:6px 0 5px}
+.tag{display:inline-block;margin-top:10px;font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);background:var(--sun);border-radius:4px;padding:2px 7px}
+.price-cols p.d{margin-top:14px;font-size:1rem;color:var(--muted)}
+.price-notes{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:26px 0 0}
+.price-notes div{border-top:3px solid var(--navy);padding-top:14px}
+.price-notes dt{font-family:var(--display);font-weight:800;font-stretch:108%;color:var(--navy)}
+.price-notes dd{margin:6px 0 0;color:var(--muted)}
 
-.band{background:var(--ink);color:#c9dbdf}
-.band h2{color:#fff}
-.band .eyebrow{color:#7fd3d6}
-.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.band .lede{color:#a9c1c7}
-.facts{display:grid;gap:14px;margin:0;padding:0;list-style:none}
-.facts li{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:18px 20px}
-.facts svg{flex:none;color:var(--warm);margin-top:2px}
-.facts b{display:block;color:#fff;font-weight:700}
+/* rooms */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:22px 22px 24px;display:grid;grid-template-columns:1fr auto;gap:10px 12px;align-items:start;align-content:start}
+.tile p{grid-column:1/-1;color:var(--muted);font-size:1rem}
+.tile h3{font-size:1.18rem;padding-top:3px}
+.kw{font-family:var(--display);font-weight:800;font-size:.9rem;background:var(--sun);color:var(--navy);border-radius:5px;padding:3px 8px;white-space:nowrap}
+.tile.wide{grid-column:1/-1;background:var(--navy);border-color:var(--navy);grid-template-columns:auto 1fr auto;align-items:center;gap:8px 28px;padding:22px 26px}
+.tile.wide h3{color:#fff;padding:0}
+.tile.wide p{grid-column:auto;color:#c9d3e3}
+.tile.wide .kw{background:transparent;border:1px solid #6d7c97;color:#fff}
+.tile-note{margin-top:16px;font-size:.95rem;color:var(--muted)}
 
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px;counter-reset:s}
-.step{position:relative;padding-top:66px}
-.step::before{counter-increment:s;content:counter(s);position:absolute;top:0;left:0;width:48px;height:48px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;font-size:1.15rem;display:grid;place-items:center}
-.step::after{content:"";position:absolute;top:24px;left:62px;right:-14px;border-top:2px dashed #bcd6d9}
-.step:last-child::after{display:none}
-.step p{margin-top:8px;color:var(--muted)}
+/* heating band */
+.heat{background:var(--sun);color:var(--navy);padding:60px 0}
+.heat-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.heat p+p{margin-top:12px}
+.heat p{font-size:1.08rem}
 
-.areas{background:var(--sand)}
-.areas-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
-.chips li{background:#fff;border:1px solid #eadfcb;border-radius:999px;padding:10px 18px;font-weight:600;color:var(--ink);font-size:.95rem}
+/* how it works */
+.how-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
+.steps{list-style:none;margin:30px 0 0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:46px 1fr;gap:4px 18px;padding:0 0 26px;position:relative}
+.steps li::before{content:counter(s);grid-row:1/3;width:46px;height:46px;border-radius:8px;background:var(--navy);color:#fff;font-family:var(--display);font-weight:800;font-size:1.25rem;display:grid;place-items:center;position:relative;z-index:1}
+.steps li::after{content:"";position:absolute;left:22px;top:46px;bottom:0;width:2px;background:var(--line)}
+.steps li:last-child{padding-bottom:0}
+.steps li:last-child::after{display:none}
+.steps h3{font-size:1.18rem;padding-top:4px}
+.steps p{color:var(--muted)}
+.how-photo{margin:0;position:sticky;top:104px}
+.how-photo img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:10px}
+.how-photo figcaption{margin-top:10px}
 
-.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
-.review{border:1px dashed #b9d0d4;border-radius:var(--radius);padding:26px;background:#fbfdfd}
-.stars{color:var(--warm);letter-spacing:3px;font-size:1.1rem}
-.skel{height:10px;border-radius:6px;background:#e4eef0;margin-top:12px}
-.skel.s{width:62%}
-.review p{margin-top:14px;font-size:.95rem;color:var(--muted)}
+/* work */
+.work{background:var(--mist)}
+.work-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
+.work-row figure{margin:0}
+.work-row img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px}
+.work-row figcaption{margin-top:9px;font-size:.96rem;line-height:1.4;color:var(--muted)}
+.work-note{margin-top:20px;font-size:.95rem;color:var(--muted)}
 
-.faq{max-width:780px}
-details{border-bottom:1px solid var(--line);padding:20px 0}
-summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-weight:700;color:var(--ink);font-size:1.06rem}
+/* check band */
+.check{background:var(--navy);color:#cfd8e6}
+.check h2{color:#fff}
+.check h3{color:var(--sun)}
+.check-head p{margin-top:14px;max-width:62ch;font-size:1.08rem}
+.check-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;margin-top:38px;align-items:stretch}
+.who{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:24px}
+.who-top{display:flex;gap:18px;align-items:center}
+.who img{width:104px;height:104px;border-radius:8px;object-fit:cover;object-position:78% 40%;flex:none}
+.who .name{font-family:var(--display);font-weight:800;font-stretch:112%;font-size:1.4rem;color:#fff;line-height:1.1}
+.who .name+p{font-size:1rem;margin-top:6px}
+.who dl{margin:18px 0 16px;display:grid;grid-template-columns:auto 1fr;gap:7px 16px;font-size:1rem}
+.who dt{color:#9fadc4}
+.who dd{margin:0}
+.check .standin,.check .blank{color:#c0cbdd;border-color:#6d7c97}
+.checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.checks li{border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:20px 22px 22px}
+.checks p{margin-top:8px;font-size:1rem}
+.check a.link{color:#fff;font-weight:600;text-underline-offset:3px;text-decoration-color:var(--sun)}
+.ask{margin-top:18px;font-size:1rem}
+.ask .standin{margin-left:6px}
+.fgas{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:28px;margin-top:44px;padding-top:30px;border-top:1px solid rgba(255,255,255,.2)}
+.fgas h3{font-size:1.05rem}
+.fgas .lead h3{color:#fff;font-size:1.3rem;font-weight:800}
+.fgas p{margin-top:8px;font-size:1rem}
+
+/* areas */
+.areas-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:start}
+.areas p{margin-top:14px;max-width:44ch}
+.towns{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px;font-weight:600}
+.towns li{padding:9px 0 9px 20px;border-bottom:1px solid var(--line);position:relative}
+.towns li::before{content:"";position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4px;background:var(--sun);border-radius:2px}
+
+/* questions */
+.faq{padding-top:0}
+.faq-list{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;align-items:start;margin-top:30px}
+details{border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:var(--display);font-weight:700;font-stretch:106%;font-size:1.08rem;line-height:1.25;color:var(--navy)}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--brand);transition:transform .2s}
-details[open] summary::after{transform:rotate(45deg)}
-details p{margin-top:12px;color:var(--muted);max-width:66ch}
+summary::after{content:"";flex:none;width:10px;height:10px;border-right:2.5px solid var(--navy);border-bottom:2.5px solid var(--navy);transform:rotate(45deg);margin:-4px 4px 0 0}
+details[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+details p{margin-top:10px;color:var(--muted)}
 
-.quote{background:linear-gradient(180deg,#fff,var(--tint))}
-.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.contact{margin:30px 0 0;padding:0;list-style:none;display:grid;gap:16px}
-.contact li{display:flex;gap:14px;align-items:center;font-weight:600;color:var(--ink)}
-.contact .icon{margin:0;width:44px;height:44px;background:#fff;border:1px solid var(--line)}
-form{background:#fff;border-radius:26px;padding:32px;box-shadow:0 30px 60px -36px rgba(12,34,51,.5);display:grid;gap:16px}
+/* quote */
+.quote{background:var(--mist)}
+.quote-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.quote-grid>div>p{margin-top:14px;max-width:40ch;font-size:1.08rem}
+.routes{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:14px}
+.routes li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--sun);border-radius:8px;padding:16px 18px 17px;color:var(--muted)}
+.routes b{display:block;font-family:var(--display);font-weight:800;font-stretch:108%;font-size:1.15rem;color:var(--navy);margin-bottom:2px}
+.routes a{text-decoration:none}
+.routes .standin{margin-top:8px}
+form{background:#fff;border:1px solid var(--line);border-top:5px solid var(--navy);border-radius:10px;padding:30px;display:grid;gap:18px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend,.field{font-weight:700;font-size:1rem;padding:0;color:var(--navy)}
+legend{margin-bottom:9px}
+legend small,.field small{font-weight:400;color:var(--muted)}
+.field{display:grid;gap:6px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-label{display:grid;gap:6px;font-weight:600;font-size:.9rem;color:var(--ink)}
-input,select,textarea{font:inherit;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);width:100%}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 4px rgba(14,124,134,.15)}
-textarea{min-height:96px;resize:vertical}
-.note{font-size:.85rem;color:var(--muted);min-height:1.3em}
+input[type=text],input[type=tel],input[type=email],textarea{font:inherit;font-weight:400;padding:12px 13px;border:1.5px solid #bcc6d6;border-radius:8px;background:#fff;color:var(--ink);width:100%}
+input:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 4px rgba(255,196,46,.45)}
+textarea{min-height:92px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;display:inline-block}
+.chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.chip span{display:block;border:1.5px solid #bcc6d6;border-radius:8px;padding:8px 13px;font-size:1rem;font-weight:600;line-height:1.3;color:var(--ink)}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible+span{outline:3px solid #2c6be0;outline-offset:2px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+form .btn{width:100%}
+.note{font-size:.92rem;color:var(--muted);min-height:1.4em}
 
-footer{background:var(--ink);color:#9fb7bd;padding:52px 0 34px;font-size:.9rem}
-.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center}
-footer .logo{color:#fff}
-footer .logo span{color:#7fd3d6}
-.foot nav{margin:0}
-.foot nav a{color:#c9dbdf}
-.legal{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);line-height:1.7}
+footer{background:var(--navy-deep);color:#aab6ca;padding:54px 0 38px;font-size:.98rem}
+.foot{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:44px}
+.foot .h{display:block;color:#fff;font-family:var(--display);font-weight:800;font-stretch:110%;font-size:1.05rem;margin-bottom:10px}
+.foot a{text-decoration:none}
+.foot a:hover{color:#fff}
+.foot a.u{text-decoration:underline;text-underline-offset:3px}
+footer .blank{color:#aab6ca;border-color:#5f6e89}
+.legal{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:.9rem}
 
-@media (max-width:920px){
-  section{padding:60px 0}
-  .hero{padding:44px 0 56px}
-  .hero-grid,.band-grid,.areas-grid,.quote-grid{grid-template-columns:1fr;gap:40px}
-  .cards{grid-template-columns:1fr 1fr}
-  .steps,.reviews{grid-template-columns:1fr}
-  .step::after{display:none}
+.callbar{display:none}
+
+@media (max-width:1180px){
+  .hero-top{grid-template-columns:1.1fr 1fr;gap:40px}
+}
+@media (max-width:1080px){
   header nav{display:none}
-  .bar .btn{margin-left:auto}
+  .tel{margin-left:auto}
+  .fgas{grid-template-columns:1fr 1fr 1fr}
+  .fgas .lead{grid-column:1/-1}
 }
-@media (max-width:540px){
-  .cards,.row{grid-template-columns:1fr}
-  .bar{gap:12px;height:64px}
-  .logo{font-size:1.04rem;gap:8px}
-  .btn-dark{padding:9px 14px;font-size:.86rem}
-  .cta .btn{flex:1 1 auto}
-  .stat{width:190px;right:16px;bottom:16px}
-  .status{left:20px;bottom:auto;top:calc(100% - 196px)}
-  .room{padding:22px 22px 190px}
-  form{padding:24px}
+@media (max-width:920px){
+  body{font-size:17px}
+  section{padding:56px 0}
+  .bar{height:64px;gap:10px}
+  .logo b{font-size:1.02rem}
+  .logo svg{width:34px;height:34px}
+  .tel{display:none}
+  .tel-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:8px;border:2px solid var(--navy);color:var(--navy);margin-left:auto;flex:none}
+  .btn-sm{padding:0 14px}
+  .hero{padding:30px 0 44px}
+  .hero-top{grid-template-columns:1fr;gap:18px;margin-bottom:28px}
+  .lede{font-size:1.1rem}
+  .cta .btn{flex:1 1 100%}
+  .hero-photo{aspect-ratio:4/3}
+  .hero-photo img{object-position:38% 50%}
+  .proof{grid-template-columns:1fr 1fr;gap:18px 14px;margin-top:24px}
+  .price-cols{grid-template-columns:1fr;margin-top:24px}
+  .price-cols>div{padding:20px 20px 22px}
+  .price-cols>div+div{border-left:0;border-top:1px solid var(--line)}
+  .fig{font-size:2.2rem;margin-top:8px}
+  .fig.alt{font-size:1.35rem}
+  .price-cols p.d{margin-top:10px}
+  .price-notes{grid-template-columns:1fr;gap:18px}
+  .tiles{grid-template-columns:1fr;gap:10px;margin-top:24px}
+  .tile{padding:16px 18px 18px;gap:6px 12px}
+  .tile.wide{grid-template-columns:1fr;padding:18px}
+  .tile.wide p{grid-column:1/-1}
+  .tile.wide .kw{grid-column:1/-1;justify-self:start;margin-top:4px}
+  .heat{padding:46px 0}
+  .heat-grid,.how-grid,.areas-grid,.quote-grid{grid-template-columns:1fr;gap:26px}
+  .how-photo{position:static}
+  .work-row{grid-template-columns:1fr 1fr;gap:14px 12px;margin-top:24px}
+  .work-row figcaption{font-size:.9rem}
+  .check-grid{grid-template-columns:1fr;gap:16px;margin-top:28px}
+  .checks{grid-template-columns:1fr;gap:12px}
+  .fgas{grid-template-columns:1fr;gap:20px;margin-top:34px;padding-top:26px}
+  .faq-list{grid-template-columns:1fr;margin-top:22px}
+  .row{grid-template-columns:1fr}
+  form{padding:22px 18px}
+  .foot{grid-template-columns:1fr;gap:24px}
+  footer{padding:46px 0 112px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(17,32,59,.08);transform:translateY(110%);transition:transform .25s}
+  .callbar.show{transform:none}
+  .callbar .btn{flex:1;min-height:54px;padding:0 10px}
 }
-@media (prefers-reduced-motion:reduce){.flow path{animation:none}html{scroll-behavior:auto}}
-</style>
-<style>
-:root{--ink:#111827;--body:#374151;--muted:#6b7280;--brand:#2563eb;--brand-dark:#1d4ed8;--tint:#eaf1ff;--warm:#ff8a1f;--warm-dark:#f07400;--warm-ink:#1f1100;--sand:#f3f5f9;--line:#e2e6ee}
-.hero{background:radial-gradient(1100px 520px at 88% -12%,#1e3a8a 0,transparent 62%),var(--ink)}
-.hero h1{color:#fff}.hero h1 em{color:#7fb0ff}
-.hero .eyebrow{color:#9cc0ff}.hero .lede{color:#b9c3d6}
-.hero .ticks{color:#fff}.hero .ticks svg{color:#7fb0ff}
-.hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.35)}
-.room{background:linear-gradient(160deg,#dbe7ff,#f7f9ff);box-shadow:0 34px 70px -30px rgba(0,0,0,.6)}
-.band{background:#0b1220}.band .eyebrow,footer .logo span{color:#8db8ff}
-footer{background:#0b1220}
-.btn-ghost{border-color:#c3cde0}.chips li{border-color:#dfe4ee}
-.review{border-color:#c5cfe2;background:#fafbfe}.skel{background:#e6eaf2}.modes{background:#eef1f7}
-.step::after{border-top-color:#c5d3ee}.card:hover{border-color:#a9c1f5}
-input:focus,select:focus,textarea:focus{box-shadow:0 0 0 4px rgba(37,99,235,.15)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.callbar{transition:none}}
 </style>
 </head>
 <body>
 
-<div class="preview"><strong>Concept preview for Stansted Aircon Ltd.</strong> Wording, phone number, areas and reviews are samples. This is not a live website.</div>
+<div class="preview"><strong>Concept preview for Stansted Aircon Ltd.</strong> The photos, prices, phone number and town list are stand-ins, and so is anything in a dashed box, until yours go in. The wording is a draft. This is not a live website.</div>
 
 <header>
   <div class="wrap bar">
     <a class="logo" href="#top" aria-label="Stansted Aircon home">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#2563eb"/><path d="M8 13h12.500a3.500 3.500 0 1 0-3.500-3.500M8 18h18M8 23h10.500a3 3 0 1 1-3 3" fill="none" stroke="#fff" stroke-width="2.300" stroke-linecap="round"/><circle cx="26.500" cy="25" r="2.500" fill="#ff8a1f"/></svg>
-      <b>Stansted<span>Aircon</span></b>
+      <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="8" fill="#ffc42e"/><path d="M9 14h13.500a3.800 3.800 0 1 0-3.800-3.800M9 20h20M9 26h11.500a3.300 3.300 0 1 1-3.300 3.300" fill="none" stroke="#11203b" stroke-width="2.600" stroke-linecap="round"/></svg>
+      <b>Stansted Aircon</b>
     </a>
     <nav aria-label="Main">
-      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#rooms">Rooms</a>
       <a href="#how">How it works</a>
-      <a href="#areas">Areas</a>
-      <a href="#faq">FAQ</a>
+      <a href="#work">Our work</a>
+      <a href="#questions">Questions</a>
     </nav>
-    <a class="btn btn-dark" href="#quote">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg>
-      07700 900 123
+    <div class="tel">
+      <a href="tel:+447700900123">07700 900 123</a><br>
+      <small>Opening hours go here</small>
+    </div>
+    <a class="tel-icon" href="tel:+447700900123" aria-label="Call 07700 900 123">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.100 1 .400 1.900.700 2.800a2 2 0 0 1-.500 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg>
     </a>
+    <a class="btn btn-main btn-sm" href="#quote">Get a free quote</a>
   </div>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Air conditioning · Stansted, Bishop's Stortford &amp; Saffron Walden</span>
-        <h1>Quietly cool. <em>Properly warm.</em> All year round.</h1>
-        <p class="lede">Air conditioning for homes, offices and shops around Stansted. It cools in summer, heats in winter, and comes with a free survey and a fixed price in writing.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="#quote">Get a free quote</a>
-          <a class="btn btn-ghost" href="#services">See what we fit</a>
-        </div>
-        <ul class="ticks">
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Free home survey</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fixed written quote</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Local and independent</li>
-        </ul>
-      </div>
-
-      <div class="room" id="room" data-mode="cool">
-        <svg class="unit" viewBox="0 0 420 250" role="img" aria-label="Wall-mounted air conditioning unit with moving airflow">
-          <rect x="30" y="18" width="360" height="92" rx="22" fill="#fff"/>
-          <rect x="30" y="18" width="360" height="92" rx="22" fill="none" stroke="#c9dde0" stroke-width="2"/>
-          <rect x="54" y="80" width="312" height="12" rx="6" fill="#dbe9eb"/>
-          <rect x="54" y="40" width="120" height="8" rx="4" fill="#e6f0f1"/>
-          <circle cx="356" cy="44" r="5" fill="var(--flow)"/>
-          <g class="flow">
-            <path d="M90 128c-18 26 14 40-4 66s12 34-2 52"/>
-            <path d="M210 128c-18 26 14 40-4 66s12 34-2 52"/>
-            <path d="M330 128c-18 26 14 40-4 66s12 34-2 52"/>
-          </g>
-        </svg>
-        <div class="status"><i></i><span id="statusText">Cooling the living room</span></div>
-        <div class="stat">
-          <small>Living room</small>
-          <div class="temp">
-            <button type="button" id="down" aria-label="Lower temperature">−</button>
-            <b><span id="deg">21</span>°</b>
-            <button type="button" id="up" aria-label="Raise temperature">+</button>
-          </div>
-          <div class="modes" role="group" aria-label="Mode">
-            <button type="button" id="cool" aria-pressed="true">Cool</button>
-            <button type="button" id="heat" aria-pressed="false">Heat</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
+  <section class="hero" id="hero">
     <div class="wrap">
-      <span class="eyebrow">What we do</span>
-      <h2>Installed, looked after and fixed by the same people</h2>
-      <p class="lede">One local firm from first survey to yearly service. You deal with the engineer who does the work.</p>
-      <div class="cards">
-        <article class="card">
-          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.500 12 4l9 7.500"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
-          <h3>Home air conditioning</h3>
-          <p>Bedrooms, lofts, home offices and conservatories. Single rooms or the whole house.</p>
-        </article>
-        <article class="card">
-          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M10 21v-4h4v4"/></svg></div>
-          <h3>Shops, offices and restaurants</h3>
-          <p>Systems that keep staff and customers comfortable, fitted around your opening hours.</p>
-        </article>
-        <article class="card">
-          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.700 6.300a4 4 0 0 0 5 5L11 20a2.100 2.100 0 0 1-3-3z"/><path d="M14.700 6.300 18 3l3 3-3.300 3.300"/></svg></div>
-          <h3>Servicing and maintenance</h3>
-          <p>A yearly clean and check keeps the air fresh, the running costs down and the warranty valid.</p>
-        </article>
-        <article class="card">
-          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
-          <h3>Repairs and breakdowns</h3>
-          <p>Not cooling, leaking or showing a fault code? We find the cause and tell you the cost first.</p>
-        </article>
+      <div class="hero-top">
+        <h1>Home air conditioning installation around Stansted</h1>
+        <div class="hero-side">
+          <p class="lede">A wall unit that cools in summer and heats in winter, for homes, offices and shops. Free survey first, then a fixed price in writing.</p>
+          <div class="cta">
+            <a class="btn btn-main" href="#quote">Get my free quote</a>
+            <a class="btn btn-line" href="tel:+447700900123">Call 07700 900 123</a>
+          </div>
+          <p class="standin">Sample phone number. Yours goes here.</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <div class="wrap band-grid">
-      <div>
-        <span class="eyebrow">Heats as well as cools</span>
-        <h2>The same unit keeps you warm all winter</h2>
-        <p class="lede">Modern air conditioning is a heat pump. It moves heat instead of making it, so it warms a room quickly and uses far less electricity than a plug-in heater.</p>
-      </div>
-      <ul class="facts">
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.900 4.900 7 7M17 17l2.100 2.100M4.900 19.100 7 17M17 7l2.100-2.100"/></svg><div><b>Warm in minutes</b>Ideal for garden rooms, extensions and loft conversions.</div></li>
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg><div><b>One system, both jobs</b>No separate heater to buy, store or plug in.</div></li>
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3 7 4-14 3 7h4"/></svg><div><b>Cleaner air too</b>Built-in filters take dust and pollen out as the air circulates.</div></li>
+      <figure class="hero-photo">
+        <img src="img/stansted-aircon/hero.jpg" alt="An engineer connecting pipework to an outdoor air conditioning unit beside a brick house">
+        <figcaption class="standin">Stand-in photo. Your own job goes here.</figcaption>
+      </figure>
+      <ul class="proof" aria-label="Facts you can check">
+        <li><b>Free survey</b>Then one fixed price, in writing</li>
+        <li><b>Cools and heats</b>The same unit does both</li>
+        <li><b>Company no. 17434562</b>Stansted Aircon Ltd</li>
+        <li><b>F-Gas certificate no.</b><span class="blank">yours goes here</span></li>
       </ul>
     </div>
   </section>
 
-  <section id="how">
+  <section class="prices" id="prices">
     <div class="wrap">
-      <span class="eyebrow">How it works</span>
-      <h2>Three steps, no surprises</h2>
-      <div class="steps">
-        <div class="step"><h3>Free survey</h3><p>We visit, measure the rooms and talk through where the units and pipework would go.</p></div>
-        <div class="step"><h3>Fixed quote</h3><p>You get one price in writing. If you say yes, we book a date that suits you.</p></div>
-        <div class="step"><h3>Neat install</h3><p>Most single-room systems are fitted in a day. We test everything and show you the controls.</p></div>
+      <div class="head-row">
+        <h2>What it costs</h2>
+        <span class="standin">Sample prices. Yours go here.</span>
+      </div>
+      <p class="sub">Starting prices, so you know roughly where you stand before you ring. The exact figure comes after the survey.</p>
+      <div class="price-cols">
+        <div>
+          <h3>One room</h3>
+          <p class="fig"><span>from</span>£1,750</p>
+          <span class="tag">Sample figure</span>
+          <p class="d">One indoor unit on the wall and one outdoor unit.</p>
+        </div>
+        <div>
+          <h3>Two rooms</h3>
+          <p class="fig"><span>from</span>£3,100</p>
+          <span class="tag">Sample figure</span>
+          <p class="d">Two indoor units run from a single outdoor unit.</p>
+        </div>
+        <div>
+          <h3>Three rooms or more</h3>
+          <p class="fig alt">Quoted after the survey</p>
+          <p class="d">Also shops, offices and restaurants. Bigger jobs need a look before anyone can give a fair price.</p>
+        </div>
+      </div>
+      <dl class="price-notes">
+        <div>
+          <dt>In the price</dt>
+          <dd>Supply of the system, fitting, commissioning and the paperwork at handover.</dd>
+        </div>
+        <div>
+          <dt>What can cost extra</dt>
+          <dd>A long pipe run, a condensate pump for a unit on an inside wall, and electrical work. Anything that applies is listed on your quote.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <div class="wrap">
+      <h2>Rooms we heat and cool</h2>
+      <div class="tiles">
+        <div class="tile"><h3>Bedroom</h3><span class="kw">2.5kW</span><p>Upstairs rooms hold the day's heat long after dark.</p></div>
+        <div class="tile"><h3>Home office</h3><span class="kw">2.5kW</span><p>A box room with a computer and a closed door warms up fast.</p></div>
+        <div class="tile"><h3>Living room</h3><span class="kw">3.5 to 5kW</span><p>The biggest room, often with patio doors facing the sun.</p></div>
+        <div class="tile"><h3>Loft conversion</h3><span class="kw">2.5 to 3.5kW</span><p>Right under the roof, so hot in summer and cold in winter.</p></div>
+        <div class="tile"><h3>Conservatory</h3><span class="kw">3.5 to 5kW</span><p>Too hot at midday and too cold by evening without help.</p></div>
+        <div class="tile"><h3>Garden office</h3><span class="kw">2.5kW</span><p>No central heating to rely on, so the unit does both jobs.</p></div>
+        <div class="tile wide"><h3>Shops, offices and restaurants</h3><p>Shop floors, small offices and dining rooms, fitted around your opening hours.</p><span class="kw">Sized at survey</span></div>
+      </div>
+      <p class="tile-note">The sizes shown are the usual ones and are only a guide. Yours is worked out at the survey.</p>
+    </div>
+  </section>
+
+  <section class="heat">
+    <div class="wrap heat-grid">
+      <h2>The same unit heats the room in winter</h2>
+      <div>
+        <p>Modern air conditioning is a heat pump. It moves heat instead of making it, so one unit on the wall cools the room in summer and warms it in winter. You do not need a separate heater.</p>
+        <p>What it costs to run depends on the model and how you use it. Ask us for the maker's figures for the unit on your quote.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap how-grid">
+      <div>
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><h3>Tell us about the room</h3><p>Use the form or ring. A photo of the wall, sent afterwards, helps us before we visit.</p></li>
+          <li><h3>Free survey</h3><p>We measure up and agree with you where both units and the pipework will go.</p></li>
+          <li><h3>Fixed written quote</h3><p>You get one price in writing. If you say yes, we book a date that suits you.</p></li>
+          <li><h3>Install day</h3><p>Indoor unit on the wall, outdoor unit on brackets or a stand, pipework inside neat trunking. Then we test it.</p></li>
+          <li><h3>Handover and paperwork</h3><p>We show you the controls and give you the commissioning record and warranty details.</p></li>
+        </ol>
+      </div>
+      <figure class="how-photo">
+        <img src="img/stansted-aircon/van.jpg" alt="A plain white van with a ladder on the roof and copper pipe and trunking inside" loading="lazy">
+        <figcaption class="standin">Stand-in photo. Your van goes here.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="head-row">
+        <h2>Our work</h2>
+        <span class="standin">Stand-in photos. Your own jobs go here.</span>
+      </div>
+      <p class="sub">Judge an installer by the outside as well as the inside: where the outdoor unit sits and how straight the trunking runs.</p>
+      <div class="work-row">
+        <figure>
+          <img src="img/stansted-aircon/condenser.jpg" alt="Outdoor unit on a ground stand beside a back door with white trunking running up the wall" loading="lazy">
+          <figcaption>Outdoor unit on a ground stand, trunking up to the bedroom</figcaption>
+        </figure>
+        <figure>
+          <img src="img/stansted-aircon/bedroom.jpg" alt="Wall unit high on a bedroom wall" loading="lazy">
+          <figcaption>Wall unit in a main bedroom</figcaption>
+        </figure>
+        <figure>
+          <img src="img/stansted-aircon/office.jpg" alt="Wall unit above a desk in a small home office" loading="lazy">
+          <figcaption>Wall unit above the desk in a box-room office</figcaption>
+        </figure>
+        <figure>
+          <img src="img/stansted-aircon/living.jpg" alt="Wall unit above a sofa in a living room" loading="lazy">
+          <figcaption>Wall unit above the sofa in a living room</figcaption>
+        </figure>
+      </div>
+      <p class="work-note">On the live site each caption names the unit size, the room and the town.</p>
+    </div>
+  </section>
+
+  <section class="check" id="check">
+    <div class="wrap">
+      <div class="check-head">
+        <h2>How to check us</h2>
+        <p>Stansted Aircon is a new company and has no reviews yet, so you will not find any stars on this page. Here is what you can check instead.</p>
+      </div>
+      <div class="check-grid">
+        <div class="who">
+          <div class="who-top">
+            <img src="img/stansted-aircon/hero.jpg" alt="" loading="lazy">
+            <div>
+              <p class="name">First name</p>
+              <p>You deal with the engineer who does the work.</p>
+            </div>
+          </div>
+          <dl>
+            <dt>Years in the trade</dt><dd><span class="blank">yours go here</span></dd>
+            <dt>Gained at</dt><dd><span class="blank">yours goes here</span></dd>
+            <dt>Qualification</dt><dd><span class="blank">yours goes here</span></dd>
+          </dl>
+          <span class="standin">Stand-in. Your name, photo and background go here.</span>
+        </div>
+        <ul class="checks">
+          <li>
+            <h3>The company</h3>
+            <p>Stansted Aircon Ltd, registered in England and Wales, company number 17434562. <a class="link" href="https://find-and-update.company-information.service.gov.uk/company/17434562" target="_blank" rel="noopener">See it on Companies House</a></p>
+          </li>
+          <li>
+            <h3>F-Gas certificate</h3>
+            <p>Certification body and number: <span class="blank">yours go here</span>. It can be looked up on that body's register.</p>
+          </li>
+          <li>
+            <h3>Insurance</h3>
+            <p>Type of cover and amount: <span class="blank">yours go here</span>. You are welcome to see the certificate.</p>
+          </li>
+          <li>
+            <h3>Brands and warranty</h3>
+            <p>Brands we fit and the maker's parts warranty: <span class="blank">yours go here</span>. Our guarantee on the fitting: <span class="blank">length goes here</span>.</p>
+          </li>
+        </ul>
+      </div>
+      <p class="ask">Would you like to speak to someone we have fitted for? Ask, and where a customer has agreed we will pass on their number. <span class="standin">Keep only if you will offer this</span></p>
+
+      <div class="fgas">
+        <div class="lead">
+          <h3>Why F-Gas matters</h3>
+          <p>Ask every installer you speak to for their certificate number.</p>
+        </div>
+        <div>
+          <h3>Required by law</h3>
+          <p>The systems hold refrigerant gas, so the company and the engineer must both be certified to install or service them.</p>
+        </div>
+        <div>
+          <h3>Needed for the warranty</h3>
+          <p>A maker can turn down a warranty claim if a certified firm did not install the system.</p>
+        </div>
+        <div>
+          <h3>Paperwork at handover</h3>
+          <p>You should be given a commissioning record and the warranty registration. Keep them with the house documents.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -315,38 +504,59 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 4px rgba(37,99,235,.15)
   <section class="areas" id="areas">
     <div class="wrap areas-grid">
       <div>
-        <span class="eyebrow">Where we work</span>
-        <h2>Based by Stansted, working across Essex and Herts</h2>
-        <p class="lede">Not sure if you are in range? Send your postcode and we will tell you the same day.</p>
+        <h2>Where we work</h2>
+        <p>Stansted and the towns around it. If yours is not on the list, put your postcode in the form and we will tell you.</p>
+        <p>Base town: <span class="blank">yours goes here</span></p>
       </div>
-      <ul class="chips">
-        <li>Stansted Mountfitchet</li><li>Bishop's Stortford</li><li>Saffron Walden</li><li>Great Dunmow</li><li>Takeley</li><li>Elsenham</li><li>Sawbridgeworth</li><li>Harlow</li><li>Thaxted</li><li>Braintree</li>
-      </ul>
+      <div>
+        <span class="standin">Sample town list. Yours goes here.</span>
+        <ul class="towns">
+          <li>Stansted Mountfitchet</li><li>Bishop's Stortford</li><li>Saffron Walden</li><li>Great Dunmow</li><li>Takeley</li><li>Elsenham</li><li>Sawbridgeworth</li><li>Harlow</li><li>Thaxted</li><li>Braintree</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <section>
+  <section class="faq" id="questions">
     <div class="wrap">
-      <span class="eyebrow">Reviews</span>
-      <h2>Your customers do the selling here</h2>
-      <p class="lede">This section fills itself from your Google reviews, so new ones appear without you touching the site.</p>
-      <div class="reviews">
-        <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><div class="skel"></div><div class="skel"></div><div class="skel s"></div><p>Your first Google review shows here.</p></div>
-        <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><div class="skel"></div><div class="skel"></div><div class="skel s"></div><p>Then the next one.</p></div>
-        <div class="review"><div class="stars" aria-hidden="true">★★★★★</div><div class="skel"></div><div class="skel"></div><div class="skel s"></div><p>Photos of finished installs can sit alongside.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq" style="padding-top:0">
-    <div class="wrap faq">
-      <span class="eyebrow">Common questions</span>
-      <h2>Before you ask</h2>
-      <div style="margin-top:26px">
-        <details open><summary>How long does an installation take?</summary><p>A single-room system is usually fitted in a day. Several rooms or a commercial space takes longer, and the quote tells you exactly how long.</p></details>
-        <details><summary>Can air conditioning really heat my home?</summary><p>Yes. Almost every modern system heats as well as cools, and many people use it as their main heating in rooms the radiators never quite reach.</p></details>
-        <details><summary>How often does it need servicing?</summary><p>Once a year for a home system is the usual advice. Busy shops, salons and kitchens benefit from a check every six months.</p></details>
-        <details><summary>Will there be much mess?</summary><p>One small hole through the wall for the pipework, trunking run neatly outside, and everything cleaned up before we leave.</p></details>
+      <h2>Questions</h2>
+      <div class="faq-list">
+        <div>
+        <details open>
+          <summary>How much does it cost?</summary>
+          <p>Starting prices are in the table further up. After the free survey you get one fixed price in writing, with any extras listed on it.</p>
+        </details>
+        <details>
+          <summary>Will it heat the room in winter?</summary>
+          <p>Yes. Almost every modern system heats as well as cools, and many people use it as the main heating in a room the radiators never quite reach.</p>
+        </details>
+        <details>
+          <summary>How long does fitting take?</summary>
+          <p>It depends on the number of rooms and the length of the pipe run. Your written quote tells you how long yours will take.</p>
+        </details>
+        <details>
+          <summary>Where do the two units go?</summary>
+          <p>The indoor unit sits high on a wall. The outdoor unit goes on brackets or a ground stand, joined by pipework inside white trunking. We agree both positions at the survey.</p>
+        </details>
+        </div>
+        <div>
+        <details>
+          <summary>What if the indoor unit is on an inside wall?</summary>
+          <p>It can usually be done. The unit then needs a small pump to take the water away, and that adds to the price. It will be on your quote.</p>
+        </details>
+        <details>
+          <summary>Is there much mess?</summary>
+          <p>One small hole through the wall for the pipework, trunking run neatly outside, and everything cleaned up before we leave.</p>
+        </details>
+        <details>
+          <summary>How often should it be serviced?</summary>
+          <p>Once a year is the usual advice for a home. Busy shops, salons and kitchens benefit from a check every six months.</p>
+        </details>
+        <details>
+          <summary>Do I need planning permission?</summary>
+          <p>That depends on the property and where the outdoor unit sits. We check at the survey and tell you before you agree to anything.</p>
+        </details>
+        </div>
       </div>
     </div>
   </section>
@@ -354,34 +564,59 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 4px rgba(37,99,235,.15)
   <section class="quote" id="quote">
     <div class="wrap quote-grid">
       <div>
-        <span class="eyebrow">Free quote</span>
-        <h2>Tell us about the room and we will be in touch today</h2>
-        <p class="lede">No call centre and no pressure. Just a straight answer on what would work and what it costs.</p>
-        <ul class="contact">
-          <li><span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.100 1 .400 1.900.700 2.800a2 2 0 0 1-.500 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg></span>07700 900 123</li>
-          <li><span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>hello@stanstedaircon.com</li>
-          <li><span class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.200 7-11a7 7 0 0 0-14 0c0 4.800 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg></span>Stansted, Essex</li>
+        <h2>Get your free quote</h2>
+        <p>Fill this in and we will be in touch to arrange the survey. There is no obligation.</p>
+        <ul class="routes">
+          <li>
+            <b><a href="tel:+447700900123">Call 07700 900 123</a></b>
+            The quickest way to talk a job through.<br>
+            <span class="standin">Sample number. Opening hours go here too.</span>
+          </li>
+          <li>
+            <b>Email</b>
+            Useful if you have plans or drawings. Address at stanstedaircon.com: <span class="blank">yours goes here</span>
+          </li>
+          <li>
+            <b>Photo of the wall</b>
+            The form cannot take photos. Send one after we reply and we will have a better idea before the survey.
+          </li>
         </ul>
       </div>
       <form id="quoteForm" novalidate>
+        <fieldset>
+          <legend>What do you need?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="need" value="New installation" checked><span>New installation</span></label>
+            <label class="chip"><input type="radio" name="need" value="Service"><span>Service</span></label>
+            <label class="chip"><input type="radio" name="need" value="Repair"><span>Repair</span></label>
+            <label class="chip"><input type="radio" name="need" value="Not sure"><span>Not sure</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Which rooms? <small>Optional, tick any</small></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="rooms" value="Bedroom"><span>Bedroom</span></label>
+            <label class="chip"><input type="checkbox" name="rooms" value="Home office"><span>Home office</span></label>
+            <label class="chip"><input type="checkbox" name="rooms" value="Living room"><span>Living room</span></label>
+            <label class="chip"><input type="checkbox" name="rooms" value="Loft"><span>Loft</span></label>
+            <label class="chip"><input type="checkbox" name="rooms" value="Conservatory"><span>Conservatory</span></label>
+            <label class="chip"><input type="checkbox" name="rooms" value="Garden room"><span>Garden room</span></label>
+            <label class="chip"><input type="checkbox" name="rooms" value="Shop or office"><span>Shop or office</span></label>
+            <label class="chip"><input type="checkbox" name="rooms" value="Other"><span>Other</span></label>
+          </div>
+        </fieldset>
         <div class="row">
-          <label>Your name<input name="name" autocomplete="name" placeholder="Jane Smith"></label>
-          <label>Phone<input name="phone" autocomplete="tel" inputmode="tel" placeholder="07…"></label>
+          <label class="field">Name<input type="text" name="name" autocomplete="name"></label>
+          <label class="field">Phone<input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
         </div>
         <div class="row">
-          <label>Postcode<input name="postcode" autocomplete="postal-code" placeholder="CM24"></label>
-          <label>What do you need?
-            <select name="need">
-              <option>New air conditioning</option>
-              <option>A service</option>
-              <option>A repair</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
+          <label class="field">Postcode<input type="text" name="postcode" autocomplete="postal-code" placeholder="CM24"></label>
+          <label class="field">Email<input type="email" name="email" autocomplete="email"></label>
         </div>
-        <label>Anything we should know?<textarea name="details" placeholder="Which rooms, roughly how big, any deadline"></textarea></label>
-        <button class="btn btn-primary" type="submit">Request my free quote</button>
-        <p class="note" id="formNote" role="status">We reply the same working day.</p>
+        <label class="field">Anything else? <small>Optional</small><textarea name="details" placeholder="Where you would like the unit, and how easy the outside wall is to get to"></textarea></label>
+        <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn btn-main" type="submit">Get my free quote</button>
+        <p class="note" id="formNote" role="status">No obligation. We only use your details to reply to this enquiry.</p>
       </form>
     </div>
   </section>
@@ -390,37 +625,46 @@ input:focus,select:focus,textarea:focus{box-shadow:0 0 0 4px rgba(37,99,235,.15)
 <footer>
   <div class="wrap">
     <div class="foot">
-      <a class="logo" href="#top"><b>Stansted<span>Aircon</span></b></a>
-      <nav aria-label="Footer">
-        <a href="#services">Services</a>
-        <a href="#how">How it works</a>
-        <a href="#areas">Areas</a>
-        <a href="#quote">Free quote</a>
-      </nav>
+      <div>
+        <span class="h">Stansted Aircon</span>
+        Air conditioning installed, serviced and repaired around Stansted.<br>
+        stanstedaircon.com
+      </div>
+      <div>
+        <span class="h">Contact</span>
+        <a href="tel:+447700900123">07700 900 123</a> (sample number)<br>
+        Email: <span class="blank">yours goes here</span><br>
+        Opening hours: <span class="blank">yours go here</span>
+      </div>
+      <div>
+        <span class="h">Check us</span>
+        Company number 17434562, <a class="u" href="https://find-and-update.company-information.service.gov.uk/company/17434562" target="_blank" rel="noopener">Companies House</a><br>
+        F-Gas certificate no. <span class="blank">yours goes here</span>
+      </div>
     </div>
     <p class="legal">Stansted Aircon Ltd is registered in England and Wales, company number 17434562. Registered office: Belmont Suite, Paragon Business Park, Chorley New Road, Bolton BL6 6HG.</p>
   </div>
 </footer>
 
+<div class="callbar" id="callbar">
+  <a class="btn btn-line" href="tel:+447700900123">Call</a>
+  <a class="btn btn-main" href="#quote">Free quote</a>
+</div>
+
 <script>
 (function(){
-  var room=document.getElementById('room'),deg=document.getElementById('deg'),
-      txt=document.getElementById('statusText'),cool=document.getElementById('cool'),heat=document.getElementById('heat'),t=21;
-  function mode(m){
-    room.dataset.mode=m;
-    cool.setAttribute('aria-pressed',m==='cool');
-    heat.setAttribute('aria-pressed',m==='heat');
-    txt.textContent=(m==='cool'?'Cooling':'Heating')+' the living room';
-  }
-  function step(d){t=Math.max(16,Math.min(28,t+d));deg.textContent=t;}
-  cool.onclick=function(){mode('cool')};
-  heat.onclick=function(){mode('heat')};
-  document.getElementById('up').onclick=function(){step(1)};
-  document.getElementById('down').onclick=function(){step(-1)};
-  document.getElementById('quoteForm').addEventListener('submit',function(e){
+  var form=document.getElementById('quoteForm');
+  form.addEventListener('submit',function(e){
     e.preventDefault();
     document.getElementById('formNote').textContent='Preview only: this form is not connected yet, so nothing was sent.';
   });
+  var bar=document.getElementById('callbar'),hero=document.getElementById('hero');
+  if(bar&&hero&&'IntersectionObserver' in window){
+    var heroOn=true,formOn=false;
+    var set=function(){bar.classList.toggle('show',!heroOn&&!formOn);};
+    new IntersectionObserver(function(en){heroOn=en[0].isIntersecting;set();}).observe(hero);
+    new IntersectionObserver(function(en){formOn=en[0].isIntersecting;set();},{threshold:.15}).observe(form);
+  }
 })();
 </script>
 </body>
