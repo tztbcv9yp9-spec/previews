@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>King Barber | Barbershop on Rowlands Road, Worthing</title>
+<meta name="description" content="King Barber, 29 Rowlands Road, Worthing. Skin fades, beard trims and hot towel shaves. Open seven days a week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f1e8; --card:#fffdf9; --ink:#17120e; --muted:#6c6258; --line:#e3d9ca;
+  --dark:#15100d; --dark-2:#211a15; --cream:#f4ede2; --cream-dim:#bdb2a3;
+  --red:#b3271c; --red-deep:#931d14; --gold:#c9963e; --green:#2f8f5b;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.4vw,3.1rem)}
+h3{font-size:1.45rem}
+.wrap{width:min(1140px,100% - 40px);margin-inline:auto}
+section{padding:92px 0}
+.label{display:block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.muted{color:var(--muted)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* preview strip */
+.preview{background:#000;color:#b7ab9c;font-size:.8rem;text-align:center;padding:8px 16px;line-height:1.45}
+.preview strong{color:#fff;font-weight:600}
+
+/* top line */
+.topline{background:var(--dark);color:var(--cream);font-size:.9rem}
+.topline .wrap{display:flex;gap:26px;align-items:center;min-height:42px}
+.status{display:inline-flex;align-items:center;gap:9px;font-weight:600}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(47,143,91,.25)}
+.status.shut i{background:#8c8175;box-shadow:none}
+.topline .mid{color:var(--cream-dim)}
+.topline a{margin-left:auto;text-decoration:none;font-weight:600;white-space:nowrap}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(246,241,232,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:30px;height:74px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.pole{width:10px;height:38px;border-radius:5px;border:1.5px solid var(--ink);background:repeating-linear-gradient(-45deg,var(--red) 0 5px,#fff 5px 10px,#27477d 10px 15px,#fff 15px 20px)}
+.logo b{font-family:var(--serif);font-weight:700;font-size:1.85rem;letter-spacing:.01em;line-height:1}
+.logo span{display:block;font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+nav{display:flex;gap:28px;margin-left:auto}
+nav a{text-decoration:none;font-weight:500;font-size:.98rem}
+nav a:hover{color:var(--red)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font:inherit;font-weight:600;text-decoration:none;white-space:nowrap;border:1.5px solid transparent;transition:background .15s,border-color .15s,color .15s}
+.btn svg{flex:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep)}
+.btn-ghost{border-color:rgba(244,237,226,.55);color:var(--cream)}
+.btn-ghost:hover{border-color:var(--cream);background:rgba(244,237,226,.08)}
+.btn-ink{border-color:var(--ink);color:var(--ink)}
+.btn-ink:hover{background:var(--ink);color:var(--paper)}
+.bar .btn{padding:11px 20px;font-size:.95rem}
+
+/* hero */
+.hero{position:relative;padding:0;background:var(--dark);color:var(--cream);overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:68% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,16,13,.94) 0,rgba(21,16,13,.82) 34%,rgba(21,16,13,.25) 68%,rgba(21,16,13,.1) 100%)}
+.hero .wrap{position:relative;z-index:2;padding:108px 0 190px}
+.hero .label{color:var(--gold)}
+h1{font-size:clamp(3.4rem,9vw,6.6rem);font-weight:700;letter-spacing:-.02em}
+.tagline{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.35rem,2.6vw,1.9rem);color:var(--cream);margin-top:10px}
+.hero .lede{max-width:44ch;margin-top:22px;font-size:1.12rem;color:#ddd3c5}
+.rating{display:inline-flex;align-items:center;gap:12px;margin-top:26px;font-weight:600}
+.stars{display:inline-flex;gap:2px;color:var(--gold)}
+.rating small{font-weight:400;color:var(--cream-dim);font-size:.95rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* info band */
+.info{padding:0;margin-top:-118px;position:relative;z-index:5}
+.info-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px -30px rgba(23,18,14,.45);overflow:hidden}
+.info-grid>div{padding:34px 34px 36px}
+.info-grid>div+div{border-left:1px solid var(--line)}
+.info h3{font-size:1.3rem;margin-bottom:14px}
+table.hours{width:100%;border-collapse:collapse;font-size:.98rem}
+table.hours td{padding:6px 0}
+table.hours td:last-child{text-align:right;color:var(--muted)}
+table.hours tr.today td{font-weight:700;color:var(--ink)}
+table.hours tr.today td:first-child::after{content:"Today";margin-left:9px;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;background:var(--red);color:#fff;padding:3px 7px;border-radius:999px;font-weight:700;vertical-align:2px}
+.info address{font-style:normal;font-size:1.06rem;line-height:1.5}
+.textlink{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-weight:600;color:var(--red);text-decoration:none;border-bottom:1.5px solid currentColor;padding-bottom:1px}
+.info p+p{margin-top:12px}
+
+/* reviews */
+.reviews-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.score{font-family:var(--serif);font-weight:700;font-size:clamp(5rem,12vw,8.5rem);line-height:.9;letter-spacing:-.03em}
+.score-meta{margin-top:14px;font-size:1.05rem}
+.score-meta .stars{margin-right:8px;vertical-align:-3px}
+blockquote{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(1.6rem,3.3vw,2.5rem);line-height:1.2;letter-spacing:-.01em}
+blockquote::before{content:"\201C";display:block;font-size:4.5rem;line-height:.6;color:var(--red);margin-bottom:10px}
+figcaption{margin-top:16px;color:var(--muted);font-size:.95rem}
+.themes{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+.themes li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-size:.95rem;font-weight:500}
+
+/* services */
+.services{background:var(--card);border-block:1px solid var(--line)}
+.head-row{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sample{font-size:.82rem;color:var(--muted);border:1px dashed #c9bca9;border-radius:999px;padding:6px 14px;white-space:nowrap}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.svc img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.svc .body{padding:24px 24px 26px}
+.svc p{color:var(--muted);font-size:.97rem;margin-top:8px}
+.plist{list-style:none;margin:18px 0 0;padding:0}
+.plist li{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-top:1px solid var(--line);font-weight:500}
+.plist li span:first-child{flex:1}
+.plist li span:last-child{font-family:var(--serif);font-weight:600;font-size:1.15rem}
+
+/* shop */
+.shop{background:var(--dark);color:var(--cream)}
+.shop .label{color:var(--gold)}
+.shop-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.shop-grid img{border-radius:16px;width:100%;aspect-ratio:3/2;object-fit:cover}
+.shop p{color:#d5cabb;margin-top:18px;max-width:50ch}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:64px;padding-top:44px;border-top:1px solid #37302a}
+.team-head{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+.team-head h3{font-size:1.7rem}
+.team-head .sample{color:var(--cream-dim);border-color:#5a5047}
+.member{display:flex;align-items:center;gap:16px;background:var(--dark-2);border:1px solid #37302a;border-radius:14px;padding:16px}
+.member img{width:68px;height:68px;border-radius:50%;object-fit:cover;flex:none}
+.member b{display:block;font-family:var(--serif);font-weight:600;font-size:1.15rem}
+.member span{font-size:.92rem;color:var(--cream-dim)}
+
+/* work */
+.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.work-grid img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.work-note{margin-top:16px;font-size:.9rem;color:var(--muted)}
+
+/* visit */
+.visit{background:var(--card);border-top:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:stretch}
+.visit address{font-style:normal;font-size:1.3rem;font-family:var(--serif);font-weight:500;line-height:1.4;margin-top:18px}
+.map{border-radius:16px;overflow:hidden;border:1px solid var(--line);min-height:380px;background:#e9e2d5}
+.map iframe{display:block;width:100%;height:100%;min-height:380px;border:0}
+.visit .cta{margin-top:26px}
+.visit p.muted{margin-top:16px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+details{border-top:1px solid var(--line);padding:20px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:var(--serif);font-weight:600;font-size:1.25rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-weight:400;font-size:1.5rem;line-height:1;color:var(--red)}
+details[open] summary::after{content:"\2212"}
+details p{margin-top:12px;color:var(--muted);max-width:60ch}
+
+footer{background:var(--dark);color:var(--cream-dim);padding:56px 0;font-size:.92rem}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+.foot b{display:block;color:var(--cream);font-family:var(--serif);font-weight:600;font-size:1.15rem;margin-bottom:10px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--cream)}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid #37302a;font-size:.84rem}
+
+.callbar{display:none}
+
+@media (max-width:920px){
+  body{font-size:16px}
+  section{padding:64px 0}
+  header nav{display:none}
+  .bar{height:66px}
+  .bar .btn{margin-left:auto}
+  .topline .mid{display:none}
+  .hero img.bg{object-position:72% 20%}
+  .hero::after{background:linear-gradient(180deg,rgba(21,16,13,.18) 0,rgba(21,16,13,.62) 38%,rgba(21,16,13,.95) 100%)}
+  .hero .wrap{padding:230px 0 150px}
+  .hero .cta .btn{flex:1 1 100%}
+  .info{margin-top:-104px}
+  .info-grid{grid-template-columns:1fr}
+  .info-grid>div{padding:26px 24px}
+  .info-grid>div+div{border-left:0;border-top:1px solid var(--line)}
+  .reviews-grid,.shop-grid,.visit-grid,.faq-grid{grid-template-columns:1fr;gap:36px}
+  .svc-grid{grid-template-columns:1fr}
+  .team{grid-template-columns:1fr;margin-top:44px;padding-top:34px}
+  .work-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .foot{grid-template-columns:1fr;gap:28px}
+  footer{padding-bottom:120px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(21,16,13,.97);border-top:1px solid #37302a}
+  .callbar .btn{flex:1;padding:14px 10px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="preview"><strong>Concept preview for King Barber, Worthing.</strong> Photos, prices and barbers' names are stand-ins until yours go in. This is not a live website.</div>
+
+<div class="topline">
+  <div class="wrap">
+    <span class="status" id="status"><i></i><span>Open seven days</span></span>
+    <span class="mid">Book on Fresha or call ahead.</span>
+    <a href="tel:+447931335663">07931 335663</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="King Barber home">
+      <i class="pole" aria-hidden="true"></i>
+      <div><b>KING</b><span>Barber</span></div>
+    </a>
+    <nav aria-label="Main">
+      <a href="#prices">Prices</a>
+      <a href="#shop">The shop</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Find us</a>
+    </nav>
+    <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">Get directions</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="bg" src="img/wow/hero.jpg" alt="A barber fading a customer's hair in the chair">
+    <div class="wrap">
+      <span class="label">Barbershop · 29 Rowlands Road, Worthing</span>
+      <h1>King Barber</h1>
+      <p class="tagline">A barber shop you'll be proud to call barber king.</p>
+      <p class="lede">Skin fades, scissor cuts, beard trims and hot towel shaves on Rowlands Road. Open seven days a week.</p>
+      <div class="rating" aria-label="Rated 4.9 out of 5 from 98 Google reviews">
+        <span class="stars" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg>
+        </span>
+        <span>4.9 <small>from 98 Google reviews</small></span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-ghost" href="tel:+447931335663">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.900v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.100 1 .400 1.900.700 2.800a2 2 0 0 1-.500 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.400c.900.300 1.800.600 2.800.700a2 2 0 0 1 1.700 2z"/></svg>
+          Call 07931 335663
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="info" aria-label="Opening hours and address">
+    <div class="wrap">
+      <div class="info-grid">
+        <div>
+          <h3>Opening hours</h3>
+          <table class="hours" id="hours">
+            <tbody>
+              <tr data-day="1"><td>Monday</td><td>9am to 6pm</td></tr>
+              <tr data-day="2"><td>Tuesday</td><td>9am to 6.30pm</td></tr>
+              <tr data-day="3"><td>Wednesday</td><td>9am to 6.30pm</td></tr>
+              <tr data-day="4"><td>Thursday</td><td>9am to 7pm</td></tr>
+              <tr data-day="5"><td>Friday</td><td>9am to 7pm</td></tr>
+              <tr data-day="6"><td>Saturday</td><td>8am to 6pm</td></tr>
+              <tr data-day="0"><td>Sunday</td><td>10am to 5pm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Where we are</h3>
+          <address>29 Rowlands Road<br>Worthing, West Sussex<br>BN11 3JJ</address>
+          <a class="textlink" href="https://www.google.com/maps/dir/?api=1&destination=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div>
+          <h3>Book or drop by</h3>
+          <p>You can book a slot through Fresha. If you'd rather drop by, call first and we'll tell you how long the wait is.</p>
+          <p class="muted">Want to check how busy we are? Call <a href="tel:+447931335663">07931 335663</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap reviews-grid">
+      <div>
+        <span class="label">Google reviews</span>
+        <div class="score">4.9</div>
+        <p class="score-meta">
+          <span class="stars" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.300 6.900.900-5 4.800 1.200 6.900L12 17.600 5.900 20.900l1.200-6.900-5-4.800L9 8.300z"/></svg>
+          </span>
+          out of 5, from <strong>98 reviews</strong>
+        </p>
+        <a class="textlink" href="https://www.google.com/maps/search/?api=1&query=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">Read them on Google</a>
+      </div>
+      <figure style="margin:0">
+        <blockquote>Good customer support &amp; friendly, very good work</blockquote>
+        <figcaption>From a Google review of King Barber</figcaption>
+        <ul class="themes" aria-label="What customers mention">
+          <li>Friendly staff</li>
+          <li>Very good work</li>
+          <li>Best place for a haircut</li>
+        </ul>
+      </figure>
+    </div>
+  </section>
+
+  <section class="services" id="prices">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <span class="label">Services and prices</span>
+          <h2>What we do</h2>
+        </div>
+        <span class="sample">Sample prices. Yours go here.</span>
+      </div>
+      <div class="svc-grid">
+        <article class="svc">
+          <img src="img/wow/fade.jpg" alt="Back of a head with a fresh skin fade" loading="lazy">
+          <div class="body">
+            <h3>Cuts and fades</h3>
+            <p>Skin fades, tapers, scissor cuts, or a straightforward short back and sides.</p>
+            <ul class="plist">
+              <li><span>Men's haircut</span><span>£15</span></li>
+              <li><span>Skin fade</span><span>£17</span></li>
+              <li><span>Head shave</span><span>£10</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc">
+          <img src="img/wow/beard.jpg" alt="A barber shaping a beard with a trimmer" loading="lazy">
+          <div class="body">
+            <h3>Beards</h3>
+            <p>Shaped, lined up and tidied, on its own or with your cut.</p>
+            <ul class="plist">
+              <li><span>Beard trim</span><span>£8</span></li>
+              <li><span>Haircut and beard</span><span>£21</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="svc">
+          <img src="img/wow/towel.jpg" alt="A customer with a hot towel over his face" loading="lazy">
+          <div class="body">
+            <h3>Hot towel</h3>
+            <p>A close cut-throat razor shave, finished with hot towels.</p>
+            <ul class="plist">
+              <li><span>Hot towel shave</span><span>£14</span></li>
+              <li><span>Shave and beard line-up</span><span>£18</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="wrap">
+      <div class="shop-grid">
+        <img src="img/wow/shop.jpg" alt="Barber chairs and mirrors inside the shop" loading="lazy">
+        <div>
+          <span class="label">The shop</span>
+          <h2>29 Rowlands Road, Worthing</h2>
+          <p>A neighbourhood barbershop in Worthing's West End, open seven days a week, with late finishes on Thursdays and Fridays. Book a slot through Fresha, or call to check for a free chair.</p>
+          <p>Skin fades, scissor cuts, beard styling, head shaves and traditional hot towel shaves, all under one roof.</p>
+        </div>
+      </div>
+      <div class="team">
+        <div class="team-head">
+          <h3>The barbers</h3>
+          <span class="sample">Stand-ins. Your names and photos go here.</span>
+        </div>
+        <div class="member"><img src="img/wow/hero.jpg" alt="" loading="lazy" style="object-position:62% 30%"><div><b>First name</b><span>Skin fades and tapers</span></div></div>
+        <div class="member"><img src="img/wow/beard.jpg" alt="" loading="lazy" style="object-position:30% 40%"><div><b>First name</b><span>Beards and line-ups</span></div></div>
+        <div class="member"><img src="img/wow/tools.jpg" alt="" loading="lazy"><div><b>First name</b><span>Hot towel shaves</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <span class="label">Recent cuts</span>
+          <h2>Fresh out of the chair</h2>
+        </div>
+        <a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&query=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">See our photos on Google</a>
+      </div>
+      <div class="work-grid">
+        <img src="img/wow/mullet.jpg" alt="A mullet with a taper fade, shown in a hand mirror" loading="lazy">
+        <img src="img/wow/fade.jpg" alt="A mid skin fade from behind" loading="lazy">
+        <img src="img/wow/beard.jpg" alt="A beard being lined up" loading="lazy">
+        <img src="img/wow/tools.jpg" alt="Clippers, combs and a razor on the worktop" loading="lazy">
+      </div>
+      <p class="work-note">Stand-in photos. On the live site this grid can show your latest Instagram posts, so posting there keeps the website fresh.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <span class="label">Find us</span>
+        <h2>On Rowlands Road</h2>
+        <address>King Barber<br>29 Rowlands Road<br>Worthing, West Sussex BN11 3JJ</address>
+        <p class="muted">By the Co-op at Plaza Parade.</p>
+        <div class="cta">
+          <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-ink" href="tel:+447931335663">Call 07931 335663</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map showing King Barber at 29 Rowlands Road, Worthing" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=King+barber,+29+Rowlands+Rd,+Worthing+BN11+3JJ&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="questions">
+    <div class="wrap faq-grid">
+      <div>
+        <span class="label">Questions</span>
+        <h2>Before you come in</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>Do I need to book?</summary>
+          <p>No, but you can. Book a slot through Fresha, or call 07931 335663 to check for a free chair before you come.</p>
+        </details>
+        <details>
+          <summary>When are you open?</summary>
+          <p>Monday 9am to 6pm, Tuesday and Wednesday 9am to 6.30pm, Thursday and Friday 9am to 7pm, Saturday 8am to 6pm and Sunday 10am to 5pm.</p>
+        </details>
+        <details>
+          <summary>Do you do hot towel shaves?</summary>
+          <p>Yes. We do traditional hot towel shaves, as well as cuts, fades and beard styling.</p>
+        </details>
+        <details>
+          <summary>Where are you?</summary>
+          <p>At 29 Rowlands Road, Worthing BN11 3JJ, by the Co-op at Plaza Parade.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <b>King Barber</b>
+        29 Rowlands Road, Worthing, West Sussex BN11 3JJ<br>
+        <a href="tel:+447931335663">07931 335663</a>
+      </div>
+      <div>
+        <b>Open seven days</b>
+        Mon 9am to 6pm · Tue and Wed 9am to 6.30pm<br>Thu and Fri 9am to 7pm · Sat 8am to 6pm<br>Sun 10am to 5pm
+      </div>
+      <div>
+        <b>Follow</b>
+        <a href="https://www.google.com/maps/search/?api=1&query=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">King barber on Google</a>
+      </div>
+    </div>
+    <p class="legal">Dler Barber Ltd is registered in England and Wales, company number 17439658. Registered office: 29 Rowlands Road, Worthing, West Sussex BN11 3JJ.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+447931335663">Call the shop</a>
+  <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=King+barber+29+Rowlands+Road+Worthing+BN11+3JJ" target="_blank" rel="noopener">Directions</a>
+</div>
+
+<script>
+(function(){
+  var open={0:10,1:9,2:9,3:9,4:9,5:9,6:8},close={0:17,1:18,2:18.5,3:18.5,4:19,5:19,6:18};
+  var names=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function clock(h){var m=Math.round((h%1)*60),hr=Math.floor(h),s=hr>12?hr-12:hr;return s+(m?'.'+(m<10?'0':'')+m:'')+(hr>=12?'pm':'am');}
+  var now=new Date(),d=now.getDay(),h=now.getHours()+now.getMinutes()/60;
+  var row=document.querySelector('#hours tr[data-day="'+d+'"]');
+  if(row){row.classList.add('today');}
+  var el=document.getElementById('status'),txt;
+  if(h>=open[d]&&h<close[d]){txt='Open now · until '+clock(close[d]);}
+  else{
+    var next=h<open[d]?d:(d+1)%7;
+    txt='Closed · opens '+clock(open[next])+(next===d?' today':' '+names[next]);
+    el.classList.add('shut');
+  }
+  el.querySelector('span').textContent=txt;
+})();
+</script>
+</body>
+</html>
